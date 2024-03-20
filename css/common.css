@@ -3,12 +3,6 @@
 @import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css");
 @import url(http://www.openhiun.com/hangul/nanumbarungothic.css);
 
-/* 글꼴 */
-@import url('http://www.openhiun.com/hangul/nanumbarungothic.css');
-
-/* fontawesome */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
-
 * {
   box-sizing: border-box;
 }
@@ -22,12 +16,4 @@
 a {
   color: inherit;
   text-decoration: none;
-}
-
-body {
-	letter-spacing: 0;
-	line-height: 1.5;
-	font-size: 15px;
-	font-weight: 400;
-	font-family: "NanumBarunGothic", "Dotum", "돋움", sans-serif;
 }
