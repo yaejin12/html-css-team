@@ -6,7 +6,6 @@
 header {
   height: 90px;
   width: 100%;
-  /* background: #e7e7e7; */
 }
 
 nav.menu {
@@ -25,8 +24,8 @@ nav.menu > .inner {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  /* background: #c3e0ff; */
 }
+
 /* link_left */
 
 nav.menu .link_left {
@@ -74,13 +73,11 @@ nav.menu .link_right a:hover {
 
 nav.menu .gnb_left ul {
   display: flex;
-  /* border: 1px solid #2cbb59; */
 }
 
 nav.menu .gnb_left ul li {
   width: 50px;
   height: 40px;
-  /* border: 1px solid #000; */
   margin: 0 50px 0 0;
 }
 
@@ -116,14 +113,11 @@ nav.menu .logo a img {
 
 nav.menu .gnb_right ul {
   display: flex;
-
-  /* border: 1px solid #2cbb59; */
 }
 
 nav.menu .gnb_right ul li {
   width: 50px;
   height: 40px;
-  /* border: 1px solid #000; */
   margin: 0 0 0 50px;
 }
 
@@ -151,5 +145,3 @@ nav.menu .gnb_right ul li:nth-child(4) a {
   opacity: 1;
   border-bottom: 4px solid #503396;
 }
-
-/*  */
