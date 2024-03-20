@@ -1,12 +1,16 @@
 @import url(../common.css);
 
 /* container */
+
 .container {
  /* border: 3px solid red; */
  width: 100%;
  /* background: navy; */
+ height: 2000px;
 }
+
 /* .page-util */
+
 .container .page-util {
   /* border: 3px solid red; */
   width: 100%;
@@ -24,7 +28,7 @@
  
  margin: 2px auto;
 }
-.container .page-util .location>i {
+.container .page-util .location > i {
   color: #90969e;
   margin: 0 2px 7px 2px;
   font-size: 14px;
@@ -33,13 +37,17 @@
   text-decoration: underline;
   color: black;
 }
+
 /* .container > #contents */
+
 #contents {
   background: white;
   width: 100%;
   margin: 0;
 }
+
 /* #contents > .inner-wrap h2*/
+
 #contents .inner-wrap .title {
 
   width: 80%;
@@ -50,7 +58,9 @@
 font-size: 30px;
 font-weight: 600;
 }
+
 /* #contents > .inner-wrap .tqp-list */
+
 #contents .inner-wrap .tap-list {
   font-size: 16px;
   width: 80%;
@@ -80,12 +90,12 @@ font-weight: 600;
 #contents .inner-wrap #top-menu ul li a:last-child {
   border-right-style: none;
 }
-
 #contents .inner-wrap #top-menu ul li a:hover {
   border: 1px solid #3C2A78;
   border-bottom-style: none;
 }
 /* #contents > .inner-wrap .movie-list-util */
+
 #contents > .inner-wrap .movie-list-util {
   /* border: 3px solid #104861; */
   width: 80%;
@@ -96,28 +106,19 @@ font-weight: 600;
   width: 10%;
   /* border: 3px solid blue; */
 }
-#contents > .inner-wrap .movie-list-util .topSort .onair-consition {
-  아직안함
-}
-#contents > .inner-wrap .movie-list-util .topSort .onair-consition button {
-  아직안함
-}
+
 /* movie-list-util2 */ 
-#contents > .inner-wrap .movie-list-util2 {
-  /* background: red; */
-}
+
 #contents > .inner-wrap .movie-list-util2 p.no-result-count {
   /* background: palegoldenrod; */
   width: 70%;
   float: left;
 }
-
 #contents > .inner-wrap .movie-list-util2 div.movie-search {
   float: right;
   width: 20%;
   display: flex;
-  /* border: 3px solid red; */
-  
+  /* border: 3px solid red; */ 
 }
 #contents > .inner-wrap .movie-search input {
   /* border: 3px solid green; */
@@ -129,35 +130,114 @@ font-weight: 600;
 }
 
 /* #contents > .inner-wrap .movie-list */
+
 #contents .movie-list ul li {
   display: flex;
   flex-wrap: wrap;
   /* border: 3px solid gold; */
   width: 80%;
   margin: 10px auto;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 #contents .movie-list ul li .movie-specify {
-  background: grey;
+  /* background: grey; */
   /* border: 3px dotted dodgerblue; */
-  width: 23%;
+  width: 22%;
+  margin-right:3% ;
+  position: relative;
+  background-color: 0;
+}
+#contents .movie-list ul li:nth-child(3) {
+  margin-right: 0;
 }
 #contents .movie-list .movie-specify > img {
-  width: 100%;
   display: block;
+  width: 100%;
 }
 #contents .movie-list .movie-specify .intro .title-area {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   justify-content: center;
   font-size: 1.3333em;
   font-weight: 400;
+  text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 #contents .movie-list .movie-specify .intro .title-area p {
   margin: 3px auto;
 }
-/* movie-list>util */
-#contents .inner-wrap .movie-list-until{
+#contents .movie-list .movie-specify .intro .rate-date {
+  /* border: 3px solid pink; */
+  display: flex;
+  justify-content: space-between;
+}
+#contents .movie-list .movie-specify .intro .rate-date .rate {
+  font-weight: 400;
+  font-size: 14px;
+  width: 40%;
+}
+#contents .movie-list .movie-specify .intro .rate-date .date {
+  font-weight: 400;
+  font-size: 14px;
+  width: 60%;
 }
 
-/* movie-list > util >button */
+/* movie-list .btn-util */
+
+#contents .movie-list .movie-specify .intro .btn-util {
+  display: flex;
+  justify-content: space-between;
+  /* background: blue; */
+  margin: 10px auto;
+}
+#contents .movie-list .movie-specify .intro .btn-util a{
+  border-radius: 6px; 
+  display: block;
+  text-align: center;
+}
+#contents .movie-list .movie-specify .intro .btn-util a#like {
+  flex: 3;
+  display: block;
+  border: 0.5px solid #90969e;
+  padding: 5px 0;
+  margin-right: 10px;
+}
+#contents .movie-list .movie-specify .intro .btn-util a#like i {
+  color: #90969e;
+  margin-right: 2px;
+  font-size: 14px;
+}
+#contents .movie-list .movie-specify .intro .btn-util a#like i > strong {
+  color:#53565B;
+}
+#contents .movie-list .movie-specify .intro .btn-util a#purchase {
+  flex: 6;
+  display: block;
+  border: 2px solid white;
+  padding: 5px 0;
+  color: white;
+  background: #3C2A78;
+} 
+ 
+  
+  /* img : after */
+/* position: absolute; */
+
+ /* #contents .movie-list .movie-specify img::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: rgba(#000, 0.8);
+  position: absolute;
+ } */
+
+/* 컨텐츠를 흐르게 하고 싶을 떄  */
+/* 두줄로 나눠서 쓰거나 */
+/* float 걸거나 */
+/* flex 걸어서 하나하나 마진을 주거나 하면 됨... */
+
+/* hover div 효과 줘서 진행
+  그레이드는 p 만들어서 진행
+   */

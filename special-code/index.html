@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
   <!-- container -->
-<div class="container">
+  <div class="container">
     <!-- page-util -->
-   <div class="page-util">
+    <div class="page-util">
       <div class="location">
         <i class="fa-solid fa-house"></i>
         <i class="fa-solid fa-chevron-right"></i>
@@ -19,8 +21,8 @@
         <a href="#" title="전체영화 페이지로 이동">전체영화</a>
       </div>
     </div>
-      <!-- contents -->
-     <div id="contents">
+    <!-- contents -->
+    <div id="contents">
       <!-- inner-wrap -->
       <div class="inner-wrap">
         <h2 class="title">전체영화</h2>
@@ -42,151 +44,192 @@
             </div>
           </div>
           <div class="movie-list-util2 clearfix">
-            <P class = "no-result-count">개봉작만
+            <P class="no-result-count">개봉작만
               <strong id="totCnt">7</strong>
               개의 영화가 검색되었습니다
             </P>
-            <div class = "movie-search">
-              <input type="text" title="영화명을 입력하세요" id="ibxMovieNmSearch" name="ibxMovieNmSearch" placeholder="영화명 검색" class="input-text">
+            <div class="movie-search">
+              <input type="text" title="영화명을 입력하세요" id="ibxMovieNmSearch" name="ibxMovieNmSearch" placeholder="영화명 검색"
+                class="input-text">
               <button type="button" class="btn-search-input" id="btnSearch">검색</button>
             </div>
           </div>
         </div>
         <!--movie list-->
-          <div class="movie-list">
-            <ul>
-              <li>
-                <div class="movie-specify">
-                  <p id="rank"></p>
-                  <img src="../special-code/movie:special-img/poster01.jpg" alt="img1">
-                  <div class="intro">
-                    <div class = "title-area">
-                      <p class="grade-age"></p>
-                      <p class="title">동백정원</p>
-                    </div>
-                    <div class = "rate-date">
-                      <span class="rate"></span>
-                      <span class="date"></span>
-                    </div>
-                    <div class="btn-util">
-                      <button id="btn-like">like</button>
-                      <button id="btn-purchase">예매</button>
-                    </div>
+        <div class="movie-list">
+          <ul>
+            <li>
+              <div class="movie-specify">
+                <p id="rank"></p>
+                <img src="../special-code/movie:special-img/poster01.jpg" alt="img2">
+                <div class="gradient"></div>
+                <div class="intro">
+                  <div class="title-area">
+                    <p class="grade-age"></p>
+                    <p class="titl
+                    e">동백정원</p>
+                  </div>
+                  <div class="rate-date">
+                    <span class="rate">예매율 0.2%</span>
+                    <span class="date">개봉일 : 2023년 12월 01일</span>
+                  </div>
+                  <div class="btn-util">
+                    <a href="#" id="like">
+                      <i class="fa-regular fa-heart">
+                        <strong>9</strong>
+                      </i>
+                      like
+                    </a>
+                    <a href="#" id="purchase">예매</a>
                   </div>
                 </div>
-                <div class="movie-specify">
-                  <p id="rank"></p>
-                  <img src="../special-code/movie:special-img/poster02.jpg" alt="img2">
-                  <div class="intro">
-                    <div class = "title-area">
-                      <p class="grade-age"></p>
-                      <p class="title">[시네마캐슬] 공백</p>
-                    </div>
-                    <div class = "rate-date">
-                      <span class="rate"></span>
-                      <span class="date"></span>
-                    </div>
-                    <div class="btn-util">
-                      <button id="btn-like">like</button>
-                      <button id="btn-purchase">예매</button>
-                    </div>
+              </div>
+              <div class="movie-specify">
+                <p id="rank"></p>
+                <img src="../special-code/movie:special-img/poster02.jpg" alt="img2">
+                <div class="gradient"></div>
+                <div class="intro">
+                  <div class="title-area">
+                    <p class="grade-age"></p>
+                    <p class="title">[시네마캐슬] 공백</p>
+                  </div>
+                  <div class="rate-date">
+                    <span class="rate">예매율 0.2%</span>
+                    <span class="date">개봉일 : 2023년 12월 01일</span>
+                  </div>
+                  <div class="btn-util">
+                    <a href="#" id="like">
+                      <i class="fa-regular fa-heart">
+                        <strong>9</strong>
+                      </i>
+                      like
+                    </a>
+                    <a href="#" id="purchase">예매</a>
                   </div>
                 </div>
-                <div class="movie-specify">
-                  <p id="rank"></p>
-                  <img src="../special-code/movie:special-img/poster03.jpg" alt="img3">
-                  <div class="intro">
-                    <div class = "title-area">
-                      <p class="grade-age"></p>
-                      <p class="title">[시네마캐슬]하나와앨리스</p>
-                    </div>
-                    <div class = "rate-date">
-                      <span class="rate"></span>
-                      <span class="date"></span>
-                    </div>
-                    <div class="btn-util">
-                      <button id="btn-like">like</button>
-                      <button id="btn-purchase">예매</button>
-                    </div>
+              </div>
+              <div class="movie-specify">
+                <p id="rank"></p>
+                <img src="../special-code/movie:special-img/poster03.jpg" alt="img3">
+                <div class="gradient"></div>
+                <div class="intro">
+                  <div class="title-area">
+                    <p class="grade-age"></p>
+                    <p class="title">[시네마캐슬]하나와앨리스</p>
+                  </div>
+                  <div class="rate-date">
+                    <span class="rate">예매율 0.2%</span>
+                    <span class="date">개봉일 : 2023년 12월 01일</span>
+                  </div>
+                  <div class="btn-util">
+                    <a href="#" id="like">
+                      <i class="fa-regular fa-heart">
+                        <strong>9</strong>
+                      </i>
+                      like
+                    </a>
+                    <a href="#" id="purchase">예매</a>
                   </div>
                 </div>
-                <div class="movie-specify">
-                  <p id="rank"></p>
-                  <img src="../special-code/movie:special-img/poster04.jpg" alt="img4">
-                  <div class="intro">
-                    <div class = "title-area">
-                      <p class="grade-age"></p>
-                      <p class="title">[시네마캐슬]괴물</p>
-                    </div>
-                    <div class = "rate-date">
-                      <span class="rate"></span>
-                      <span class="date"></span>
-                    </div>
-                    <div class="btn-util">
-                      <button id="btn-like">like</button>
-                      <button id="btn-purchase">예매</button>
-                    </div>
+              </div>
+              <div class="movie-specify">
+                <p id="rank"></p>
+                <img src="../special-code/movie:special-img/poster04.jpg" alt="img4">
+                <div class="gradient"></div>
+                  <div class="title-area">
+                    <p class="grade-age"></p>
+                    <p class="title">[시네마캐슬]괴물</p>
+                  </div>
+                  <div class="rate-date">
+                    <span class="rate">예매율 0.2%</span>
+                    <span class="date">개봉일 : 2023년 12월 01일</span>
+                  </div>
+                  <div class="btn-util">
+                    <a href="#" id="like">
+                      <i class="fa-regular fa-heart">
+                        <strong>9</strong>
+                      </i>
+                      like
+                    </a>
+                    <a href="#" id="purchase">예매</a>
                   </div>
                 </div>
-                <div class="movie-specify">
-                  <p id="rank"></p>
-                  <img src="../special-code/movie:special-img/poster05.jpg" alt="img5">
-                  <div class="intro">
-                    <div class = "title-area">
-                      <p class="grade-age"></p>
-                      <p class="title">[시네마캐슬]그녀가 좋아하는 것은</p>
-                    </div>
-                    <div class = "rate-date">
-                      <span class="rate"></span>
-                      <span class="date"></span>
-                    </div>
-                    <div class="btn-util">
-                      <button id="btn-like">like</button>
-                      <button id="btn-purchase">예매</button>
-                    </div>
+              </div>
+              <div class="movie-specify">
+                <p id="rank"></p>
+                <img src="../special-code/movie:special-img/poster05.jpg" alt="img5">
+                <div class="gradient"></div>
+                  <div class="title-area">
+                    <p class="grade-age"></p>
+                    <p class="title">[시네마캐슬]그녀가 좋아하는 것은</p>
+                  </div>
+                  <div class="rate-date">
+                    <span class="rate">예매율 0.2%</span>
+                    <span class="date">개봉일 : 2023년 12월 01일</span>
+                  </div>
+                  <div class="btn-util">
+                    <a href="#" id="like">
+                      <i class="fa-regular fa-heart">
+                        <strong>9</strong>
+                      </i>
+                      like
+                    </a>
+                    <a href="#" id="purchase">예매</a>
                   </div>
                 </div>
-                <div class="movie-specify">
-                  <p id="rank"></p>
-                  <img src="../special-code/movie:special-img/poster06.jpg" alt="img6">
-                  <div class="intro">
-                    <div class = "title-area">
-                      <p class="grade-age"></p>
-                      <p class="title">[시네마캐슬]키리에의 노래 디렉터스 컷</p>
-                    </div>
-                    <div class = "rate-date">
-                      <span class="rate"></span>
-                      <span class="date"></span>
-                    </div>
-                    <div class="btn-util">
-                      <button id="btn-like">like</button>
-                      <button id="btn-purchase">예매</button>
-                    </div>
+              </div>
+              <div class="movie-specify">
+                <p id="rank"></p>
+                <img src="../special-code/movie:special-img/poster06.jpg" alt="img6">
+                <div class="gradient"></div>
+                  <div class="title-area">
+                    <p class="grade-age"></p>
+                    <p class="title">[시네마캐슬]키리에의 노래 디렉터스 컷</p>
+                  </div>
+                  <div class="rate-date">
+                    <span class="rate">예매율 0.2%</span>
+                    <span class="date">개봉일 : 2023년 12월 01일</span>
+                  </div>
+                  <div class="btn-util">
+                    <a href="#" id="like">
+                      <i class="fa-regular fa-heart">
+                        <strong>9</strong>
+                      </i>
+                      like
+                    </a>
+                    <a href="#" id="purchase">예매</a>
                   </div>
                 </div>
-                <div class="movie-specify">
-                  <p id="rank"></p>
-                  <img src="../special-code/movie:special-img/poster07.jpg" alt="img7">
-                  <div class="intro">
-                    <div class = "title-area">
-                      <p class="grade-age"></p>
-                      <p class="title">키리에의 노래 디렉터스컷</p>
-                    </div>
-                    <div class = "rate-date">
-                      <span class="rate"></span>
-                      <span class="date"></span>
-                    </div>
-                    <div class="btn-util">
-                      <button id="btn-like">like</button>
-                      <button id="btn-purchase">예매</button>
-                    </div>
+              </div>
+              <div class="movie-specify">
+                <p id="rank"></p>
+                <img src="../special-code/movie:special-img/poster07.jpg" alt="img6">
+                <div class="gradient"></div>
+                  <div class="title-area">
+                    <p class="grade-age"></p>
+                    <p class="title">[시네마캐슬]디렉터스 컷</p>
+                  </div>
+                  <div class="rate-date">
+                    <span class="rate">예매율 0.2%</span>
+                    <span class="date">개봉일 : 2023년 12월 01일</span>
+                  </div>
+                  <div class="btn-util">
+                    <a href="#" id="like">
+                      <i class="fa-regular fa-heart">
+                        <strong>9</strong>
+                      </i>
+                      like
+                    </a>
+                    <a href="#" id="purchase">예매</a>
                   </div>
                 </div>
-              </li>
-            </ul>
-          </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-     </div>
-</div>
+    </div>
+  </div>
 </body>
+
 </html>
