@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="page-util fixed">
+      <div class="inner-wrap">
+        <div class="location">
+          <span>Home</span>
+                  <a href="/movie" title="영화 페이지로 이동">영화</a>
+                  <a href="/movie" title="전체영화 페이지로 이동">전체영화</a>
+        </div>
+  
+        
+      </div>
+    </div>
+  
+    <!-- contents -->
+    <div id="contents" class="location-fixed tab-fixed">
+      <!-- inner-wrap -->
+      <div class="inner-wrap">
+        <h2 class="tit">전체영화</h2>
+  
+        <div class="tab-list fixed on">
+          <ul id="topMenu">
+            <li class="on"><a href="/movie" title="박스오피스 탭으로 이동">박스오피스</a></li>
+            <li><a href="/movie/comingsoon" title="상영예정작 탭으로 이동">상영예정작</a></li>
+            <li><a href="/movie/special" title="특별상영 탭으로 이동">특별상영</a></li>
+            <li><a href="/movie/film" title="필름소사이어티 탭으로 이동">필름소사이어티</a></li>
+            <li><a href="/movie/classic" title="클래식소사이어티 탭으로 이동">클래식소사이어티</a></li>
+            
+          </ul>
+        </div>
+  
+        <!-- movie-list-util -->
+        <div class="movie-list-util mt40">
+          <!-- 박스오피스 -->
+          <div class="topSort" style="display: block;">
+            <div class="movie-sorting sortTab">
+  <!-- 						<span><button type="button" class="btn on" sort-type="ticketing">예매율순</button></span> -->
+  <!-- 						<span><button type="button" class="btn" sort-type="accmAdnc">누적관객순</button></span> -->
+  <!-- 						<span><button type="button" class="btn" sort-type="megaScore">메가스코어순</button></span> -->
+            </div>
+  
+            <div class="onair-condition">
+              <button type="button" title="개봉작만 보기" class="btn-onair btnOnAir">개봉작만</button>
+            </div>
+          </div>
+          <!--// 박스오피스 -->
+  
+          <!-- 상영예정작 -->
+          <div class="topSort" style="display: none;">
+            <div class="movie-sorting sortTab">
+              <span><button type="button" class="btn on" sort-type="rfilmDe">개봉일순</button></span>
+              <span><button type="button" class="btn" sort-type="title">가나다순</button></span>
+            </div>
+          </div>
+          <!--// 상영예정작 -->
+  
+          <!-- 특별상영 -->
+          <div class="topSort" style="display: none;">
+            <div class="onair-condition">
+              <button type="button" title="개봉작만 보기" class="btn-onair btnOnAir">개봉작만</button>
+            </div>
+          </div>
+          <!--// 특별상영 -->
+  
+          <!-- 필름소사이어티 -->
+          <div class="topSort" style="display: none;">
+            <div class="movie-sorting sortTab">
+              <span><button type="button" class="btn on" sort-type="ticketing" tab-cd="">전체</button></span>
+              
+            </div>
+  
+            <div class="onair-condition">
+              <button type="button" title="개봉작만 보기" class="btn-onair btnOnAir">개봉작만</button>
+            </div>
+          </div>
+          <!--// 필름소사이어티 -->
+  
+          <!-- 클래식소사이어티 -->
+          <div class="topSort" style="display: none;">
+            <div class="movie-sorting sortTab">
+              <span><button type="button" class="btn on" sort-type="ticketing" tab-cd="">전체</button></span>
+              
+            </div>
+  
+            <div class="onair-condition">
+              <button type="button" title="개봉작만 보기" class="btn-onair btnOnAir">개봉작만</button>
+            </div>
+          </div>
+          <!--// 클래식소사이어티 -->
+  
+          <!-- 장르모아보기 -->
+          <div class="topSort" style="display: none;">
+            <div class="movie-sorting sortTab">
+              <span><button type="button" class="btn on" sort-type="ticketing">예매율순</button></span>
+              <span><button type="button" class="btn" sort-type="accmAdnc">누적관객순</button></span>
+              <span><button type="button" class="btn" sort-type="megaScore">메가스코어순</button></span>
+            </div>
+  
+            <div class="onair-condition">
+              <button type="button" title="개봉작만 보기" class="btn-onair btnOnAir">개봉작만</button>
+            </div>
+          </div>
+          <!--// 장르모아보기 -->
+  
+          <!-- 검색결과 없을 때 -->
+          <p class="no-result-count"><strong id="totCnt">110</strong>개의 영화가 검색되었습니다.</p>
+          <!--// 검색결과 없을 때 -->
+  
+          <div class="movie-search">
+            <input type="text" title="영화명을 입력하세요" id="ibxMovieNmSearch" name="ibxMovieNmSearch" placeholder="영화명 검색" class="input-text">
+            <button type="button" class="btn-search-input" id="btnSearch">검색</button>
+          </div>
+        </div>
+        <!--// movie-list-util -->
+  
+        <div class="bg-loading" style="display: none;">
+          <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+  
+        <!-- movie-list -->
+        <div class="movie-list">
+          <ol class="list" id="movieList"><li tabindex="0" class="no-img"><div class="movie-list-info">    <p class="rank" style="">1<span class="ir">위</span></p>    <img src="https://img.megabox.co.kr/SharedImg/2024/02/23/OpnH8Ij41oqrmeV7kZ9EBnDs2F9H9Oye_420.jpg" alt="극장판 스파이 패밀리 코드 : 화이트" class="poster lozad" onerror="noImg(this)">    <div class="curation">        <p class="film" style="display: none">필름 소사이어티</p>        <p class="classic" style="display: none">클래식 소사이어티</p>    </div>    <div class="screen-type2">        <p name="dbcScrean" style=""><img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_db.png" alt="dolby"></p>        <p name="mxScreen" style=""><img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_atmos.png" alt="dolbyatmos"></p>    </div>    <div class="movie-score" style="opacity: 0;">        <a href="#" class="wrap movieBtn" data-no="24010700" title="극장판 스파이 패밀리 코드 : 화이트 상세보기">            <div class="summary">세계 각국이 물밑에서 치열하게 정보전을 펼치고 있는 시대. 
+  
+  서로의 정체를 숨긴 채 결성된 위장 가족의 아버지 '로이드(스파이)'와
+  어머니 '요르(암살자)', 딸 '아냐(초능력자)'는
+  각자의 목표를 위해 비밀스러운 임무를 수행한다.
+  
+  오퍼레이션 &lt;올빼미&gt; 작전을 위해 첫 가족 여행을 떠나던 중,
+  '아냐'는 열차 안에서 수상한 캐리어를 발견하고
+  그 안의 초콜릿을 실수로 그만 삼켜버리고 마는데…
+  
+  엄청난 비밀이 숨겨진 초콜릿과 여행지에서 생기는 해프닝의 연속!! 
+  세계의 명운은, 다시 이 위장 가족에게 맡겨졌다!</div>            <div class="my-score big" style="display: none;">                <div class="preview">                    <p class="tit">관람평</p>                    <p class="number">9<span class="ir">점</span></p>                </div>            </div>        </a>    </div></div><div class="tit-area">    <p class="movie-grade age-12">,</p>    <p title="극장판 스파이 패밀리 코드 : 화이트" class="tit">극장판 스파이 패밀리 코드 : 화이트</p></div><div class="rate-date">    <span class="rate">예매율 24.2%</span>    <span class="date">개봉일 2024.03.20</span></div><div class="btn-util">    <button type="button" class="button btn-like" data-no="24010700"><i title="보고싶어 안함" class="iconset ico-heart-toggle-gray intrstType"></i> <span>923</span></button>    <p class="txt movieStat1" style="display: none">상영예정</p>    <p class="txt movieStat2" style="display: none">3월 개봉예정</p>    <p class="txt movieStat5" style="display: none">개봉예정</p>    <p class="txt movieStat6" style="display: none">상영종료</p>    <div class="case col-2 movieStat3" style="">        <a href="#" class="button purple bokdBtn" data-no="24010700" title="영화 예매하기">예매</a>        <a href="#" class="button purple img splBtn" data-no="24010700"><img src="/static/pc/images/common/btn/mov_list_db_btn.png" alt="dolby 버튼"></a>    </div>    <div class="case movieStat4" style="display: none">        <a href="#" class="button purple bokdBtn" data-no="24010700" title="영화 예매하기">예매</a>    </div></div></li><li tabindex="0" class="no-img"><div class="movie-list-info">    <p class="rank" style="">2<span class="ir">위</span></p>    <img src="https://img.megabox.co.kr/SharedImg/2024/02/22/s7Ica1Ow0MEP0U7l57tOjO1DXexU2N9E_420.jpg" alt="파묘" class="poster lozad" onerror="noImg(this)">    <div class="curation">        <p class="film" style="display: none">필름 소사이어티</p>        <p class="classic" style="display: none">클래식 소사이어티</p>    </div>    <div class="screen-type2">        <p name="dbcScrean" style="display: none"><img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_db.png" alt="dolby"></p>        <p name="mxScreen" style=""><img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_atmos.png" alt="dolbyatmos"></p>    </div>    <div class="movie-score" style="opacity: 0;">        <a href="#" class="wrap movieBtn" data-no="24004100" title="파묘 상세보기">            <div class="summary">“전부 잘 알 거야… 묘 하나 잘못 건들면 어떻게 되는지”
+  
+  미국 LA, 거액의 의뢰를 받은 무당 ‘화림’(김고은)과 ‘봉길’(이도현)은
+  기이한 병이 대물림되는 집안의 장손을 만난다.
+  조상의 묫자리가 화근임을 알아챈 ‘화림’은 이장을 권하고,
+  돈 냄새를 맡은 최고의 풍수사 ‘상덕’(최민식)과 장의사 ‘영근’(유해진)이 합류한다.
+  
+  “전부 잘 알 거야… 묘 하나 잘못 건들면 어떻게 되는지”
+  
+  절대 사람이 묻힐 수 없는 악지에 자리한 기이한 묘.
+  ‘상덕’은 불길한 기운을 느끼고 제안을 거절하지만,
+  ‘화림’의 설득으로 결국 파묘가 시작되고…
+  
+  나와서는 안될 것이 나왔다.</div>            <div class="my-score big">                <div class="preview">                    <p class="tit">관람평</p>                    <p class="number">9<span class="ir">점</span></p>                </div>            </div>        </a>    </div></div><div class="tit-area">    <p class="movie-grade age-15">,</p>    <p title="파묘" class="tit">파묘</p></div><div class="rate-date">    <span class="rate">예매율 20.8%</span>    <span class="date">개봉일 2024.02.22</span></div><div class="btn-util">    <button type="button" class="button btn-like" data-no="24004100"><i title="보고싶어 안함" class="iconset ico-heart-toggle-gray intrstType"></i> <span>3.4k</span></button>    <p class="txt movieStat1" style="display: none">상영예정</p>    <p class="txt movieStat2" style="display: none">2월 개봉예정</p>    <p class="txt movieStat5" style="display: none">개봉예정</p>    <p class="txt movieStat6" style="display: none">상영종료</p>    <div class="case col-2 movieStat3" style="display: none">        <a href="#" class="button purple bokdBtn" data-no="24004100" title="영화 예매하기">예매</a>        <a href="#" class="button purple img splBtn" data-no="24004100"><img src="/static/pc/images/common/btn/mov_list_db_btn.png" alt="dolby 버튼"></a>    </div>    <div class="case movieStat4" style="">        <a href="#" class="button purple bokdBtn" data-no="24004100" title="영화 예매하기">예매</a>    </div></div></li><li tabindex="0" class="no-img"><div class="movie-list-info">    <p class="rank" style="">3<span class="ir">위</span></p>    <img src="https://img.megabox.co.kr/SharedImg/2024/02/07/LVp8bCwlBWpI9BHacDmo6Vun9nm5n9PW_420.jpg" alt="듄: 파트2" class="poster lozad" onerror="noImg(this)">    <div class="curation">        <p class="film" style="display: none">필름 소사이어티</p>        <p class="classic" style="display: none">클래식 소사이어티</p>    </div>    <div class="screen-type2">        <p name="dbcScrean" style=""><img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_db.png" alt="dolby"></p>        <p name="mxScreen" style=""><img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_atmos.png" alt="dolbyatmos"></p>    </div>    <div class="movie-score" style="opacity: 0;">        <a href="#" class="wrap movieBtn" data-no="23095500" title="듄: 파트2 상세보기">            <div class="summary">
+  황제의 모략으로 멸문한 가문의 유일한 후계자 폴.(티모시 샬라메)
+  어머니 레이디 제시카(레베카 퍼거슨)와 간신히 목숨만 부지한 채 사막으로 도망친다.
+  그곳에서 만난 반란군들과 숨어 지내다 그들과 함께 황제의 모든 것을 파괴할 전투를 준비한다.
+  한편 반란군들의 기세가 높아질수록 불안해진 황제와 귀족 가문은
+  잔혹한 암살자 페이드 로타(오스틴 버틀러)를 보내 반란군을 몰살하려 하는데…
+  
+  2월, 운명의 반격이 시작된다!</div>            <div class="my-score big">                <div class="preview">                    <p class="tit">관람평</p>                    <p class="number">9.2<span class="ir">점</span></p>                </div>            </div>        </a>    </div></div><div class="tit-area">    <p class="movie-grade age-12">,</p>    <p title="듄: 파트2" class="tit">듄: 파트2</p></div><div class="rate-date">    <span class="rate">예매율 15.9%</span>    <span class="date">개봉일 2024.02.28</span></div><div class="btn-util">    <button type="button" class="button btn-like" data-no="23095500"><i title="보고싶어 안함" class="iconset ico-heart-toggle-gray intrstType"></i> <span>3.1k</span></button>    <p class="txt movieStat1" style="display: none">상영예정</p>    <p class="txt movieStat2" style="display: none">2월 개봉예정</p>    <p class="txt movieStat5" style="display: none">개봉예정</p>    <p class="txt movieStat6" style="display: none">상영종료</p>    <div class="case col-2 movieStat3" style="">        <a href="#" class="button purple bokdBtn" data-no="23095500" title="영화 예매하기">예매</a>        <a href="#" class="button purple img splBtn" data-no="23095500"><img src="/static/pc/images/common/btn/mov_list_db_btn.png" alt="dolby 버튼"></a>    </div>    <div class="case movieStat4" style="display: none">        <a href="#" class="button purple bokdBtn" data-no="23095500" title="영화 예매하기">예매</a>    </div></div></li><li tabindex="0" class="no-img"><div class="movie-list-info">    <p class="rank" style="">4<span class="ir">위</span></p>    <img src="https://img.megabox.co.kr/SharedImg/2024/02/26/kFf35GeLMd3Ni2fhigw9JZ8MMiu5tvF3_420.jpg" alt="목스박" class="poster lozad" onerror="noImg(this)">    <div class="curation">        <p class="film" style="display: none">필름 소사이어티</p>        <p class="classic" style="display: none">클래식 소사이어티</p>    </div>    <div class="screen-type2">        <p name="dbcScrean" style="display: none"><img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_db.png" alt="dolby"></p>        <p name="mxScreen" style="display: none"><img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_atmos.png" alt="dolbyatmos"></p>    </div>    <div class="movie-score" style="opacity: 0;">        <a href="#" class="wrap movieBtn" data-no="24011200" title="목스박 상세보기">            <div class="summary">왕갈비파의 두 행동대장 ‘경철’과 ‘태용’은
+  삼거리파의 갑작스러운 습격으로 생일파티날 자신들의 보스를 잃고
+  가까스로 피신해 각각 천사의 교회와 은신사에 숨는다.
+  사기꾼 목사 때문에 망해버린 교회에서 새로운 목회자로 추앙받는 ‘경철’
+  은신사에 숨어든 잡범들을 내쫓으며 주지 스님과 기거하는 ‘태용’
+  두 사람은 숨죽이며 복수할 날을 기다린다..
+  
+  하지만 삼거리파는 왕갈비파의 세력이 약해진 틈을 타 사채와 인신매매를 일삼고
+  이에 분노한 박수무당 형사 ‘도필’은 ‘경철’과 ‘태용’을 찾아
+  삼거리파 두목 ‘인성’을 잡기 위한 일시적인 연합을 제안한다.
+  
+  목사, 스님, 박수무당 형사의 신박한 복수!
+  좌충우돌 그들이 온다!</div>            <div class="my-score equa" style="display: none;">                <div class="preview">                    <p class="tit">관람평</p>                    <p class="number">0<span class="ir">점</span></p>                </div>            </div>        </a>    </div></div><div class="tit-area">    <p class="movie-grade age-15">,</p>    <p title="목스박" class="tit">목스박</p></div><div class="rate-date">    <span class="rate">예매율 11.4%</span>    <span class="date">개봉일 2024.03.20</span></div><div class="btn-util">    <button type="button" class="button btn-like" data-no="24011200"><i title="보고싶어 안함" class="iconset ico-heart-toggle-gray intrstType"></i> <span>120</span></button>    <p class="txt movieStat1" style="display: none">상영예정</p>    <p class="txt movieStat2" style="display: none">3월 개봉예정</p>    <p class="txt movieStat5" style="display: none">개봉예정</p>    <p class="txt movieStat6" style="display: none">상영종료</p>    <div class="case col-2 movieStat3" style="display: none">        <a href="#" class="button purple bokdBtn" data-no="24011200" title="영화 예매하기">예매</a>        <a href="#" class="button purple img splBtn" data-no="24011200"><img src="/static/pc/images/common/btn/mov_list_db_btn.png" alt="dolby 버튼"></a>    </div>    <div class="case movieStat4" style="">        <a href="#" class="button purple bokdBtn" data-no="24011200" title="영화 예매하기">예매</a>    </div></div></li><li tabindex="0" class="no-img"><div class="movie-list-info">    <p class="rank" style="">5<span class="ir">위</span></p>    <img src="https://img.megabox.co.kr/SharedImg/2024/03/18/YlRiXGE3UAfnGuFiMj0D9CULBf7dZDE1_420.jpg" alt="밥 말리: 원 러브" class="poster lozad" onerror="noImg(this)">    <div class="curation">        <p class="film" style="display: none">필름 소사이어티</p>        <p class="classic" style="display: none">클래식 소사이어티</p>    </div>    <div class="screen-type2">        <p name="dbcScrean" style=""><img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_db.png" alt="dolby"></p>        <p name="mxScreen" style="display: none"><img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_atmos.png" alt="dolbyatmos"></p>    </div>    <div class="movie-score" style="opacity: 0;">        <a href="#" class="wrap movieBtn" data-no="24010300" title="밥 말리: 원 러브 상세보기">            <div class="summary">전설의 아티스트 ‘밥 말리’,                                                                   
+  스크린을 뜨거운 전율의 무대로 만들다!
+  
+  오랜 분열로 혼란스러운 시기에 빠진 자메이카 국민들을 위로하기 위해 
+  스마일 자메이카 콘서트를 준비하던 ‘밥 말리’는 총격을 입고 영국으로 망명을 택한다. 
+  
+  런던에서 지내며 사랑과 평화, 공존의 메시지를 담은 
+  ’엑소더스’ 앨범을 발매하고 전세계가 열광하는 아이콘이 된 ’밥 말리‘. 
+  그는 생명의 위협에도 불구하고 다시 한번 자메이카 국민들 앞에서 
+  평화를 노래하는 콘서트를 열기 위해 무대에 오르는데…
+  
+  슈퍼스타, 시대의 아이콘, 메시지가 된 ‘밥 말리’
+  멈추지 않고 전세계에 평화와 사랑을 노래하다!      </div>            
+  
+  <div class="my-score big">                
+    <div class="preview">                    
+      <p class="tit">관람평</p>                    
+      <p class="number">7.6<span class="ir">점</span></p>                
+    </div>            
+  </div>        
+</a>    
+</div>
+</div>
+
+<div class="tit-area">    
+  <p class="movie-grade age-15">,</p>    
+  <p title="밥 말리: 원 러브" class="tit">밥 말리: 원 러브</p>
+</div><div class="rate-date">    
+  <span class="rate">예매율 4.9%</span>    
+  <span class="date">개봉일 2024.03.13</span>
+</div>
+
+<div class="btn-util">    
+  <button type="button" class="button btn-like" data-no="24010300">
+    <i title="보고싶어 안함" class="iconset ico-heart-toggle-gray intrstType"></i> 
+    <span>231</span></button>    
+    <p class="txt movieStat1" style="display: none">상영예정</p>    
+    <p class="txt movieStat2" style="display: none">3월 개봉예정</p>    
+    <p class="txt movieStat5" style="display: none">개봉예정</p>   
+     <p class="txt movieStat6" style="display: none">상영종료</p>    
+     <div class="case col-2 movieStat3" style="">        
+      <a href="#" class="button purple bokdBtn" data-no="24010300" title="영화 예매하기">예매</a>        
+      <a href="#" class="button purple img splBtn" data-no="24010300">
+        <img src="/static/pc/images/common/btn/mov_list_db_btn.png" alt="dolby 버튼"></a>    
+      </div>    <div class="case movieStat4" style="display: none">        
+        <a href="#" class="button purple bokdBtn" data-no="24010300" title="영화 예매하기">예매</a>    
+      </div></div></li><li tabindex="0" class="no-img"><div class="movie-list-info">    
+        <p class="rank" style="">6<span class="ir">위</span></p>    
+        <img src="https://img.megabox.co.kr/SharedImg/2024/02/19/KdYopYfSwypsx6vJeG7V605K7PBxNu6D_420.jpg" alt="랜드 오브 배드" class="poster lozad" onerror="noImg(this)">    
+        <div class="curation">        <p class="film" style="display: none">필름 소사이어티</p>        
+          <p class="classic" style="display: none">클래식 소사이어티</p>    
+        </div>    <div class="screen-type2">        
+          <p name="dbcScrean" style="display: none">
+            <img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_db.png" alt="dolby"></p> 
+            <p name="mxScreen" style="display: none">
+              <img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_atmos.png" alt="dolbyatmos"></p>    
+            </div>    
+            <div class="movie-score">        
+              <a href="#" class="wrap movieBtn" data-no="24007900" title="랜드 오브 배드 상세보기">            
+                <div class="summary">라스베이거스 공군 기지의 베테랑 드론 조종사 리퍼(러셀 크로우)는
+  델타포스 티어-원 부대의 CIA 요원 구출작전 지원임무를 맡게 된다.
+  
+  슈가(마일로 벤티밀리아), 아벨(루크 헴스워스)이 이끄는 티어-원 부대는
+  CIA 요원이 사라진 필리핀 남서부, 미스터리한 지형의 홀로 섬 정찰에 나서고,
+  이 위험천만한 작전을 위해 JTAC 신입요원 키니(리암 헴스워스)와
+  실전 경험이 많은 군인 비숍(리키 휘틀)까지 합류한다.
+  
+  그러나 도망칠 곳도 숨을 곳도 없는 섬에서 이들은 곧 적에게 노출되고
+  피할 수 없는 전면전이 펼쳐지며 상황은 급반전을 맞이한다.
+  
+  무기도, 통신장비도 없는 정글에 홀로 갇힌 키니,
+  동료를 구하고 작전을 성공시켜야 할 그에게 남은 건, 눈과 귀가 되어주는 드론 조종사 리퍼뿐!
+  
+  누구도 포기하지 않는다, 끝까지 살아남는다!</div>            <div class="my-score big">                <div class="preview">                    <p class="tit">관람평</p>                    <p class="number">8.5<span class="ir">점</span></p>                </div>            </div>        </a>    </div></div><div class="tit-area">    <p class="movie-grade age-15">,</p>    <p title="랜드 오브 배드" class="tit">랜드 오브 배드</p></div><div class="rate-date">    <span class="rate">예매율 2.5%</span>    <span class="date">개봉일 2024.03.13</span></div><div class="btn-util">    <button type="button" class="button btn-like" data-no="24007900"><i title="보고싶어 안함" class="iconset ico-heart-toggle-gray intrstType"></i> <span>287</span></button>    <p class="txt movieStat1" style="display: none">상영예정</p>    <p class="txt movieStat2" style="display: none">3월 개봉예정</p>    <p class="txt movieStat5" style="display: none">개봉예정</p>    <p class="txt movieStat6" style="display: none">상영종료</p>    <div class="case col-2 movieStat3" style="display: none">        <a href="#" class="button purple bokdBtn" data-no="24007900" title="영화 예매하기">예매</a>        <a href="#" class="button purple img splBtn" data-no="24007900"><img src="/static/pc/images/common/btn/mov_list_db_btn.png" alt="dolby 버튼"></a>    </div>    <div class="case movieStat4" style="">        <a href="#" class="button purple bokdBtn" data-no="24007900" title="영화 예매하기">예매</a>    </div></div></li><li tabindex="0" class="no-img"><div class="movie-list-info">    <p class="rank" style="">7<span class="ir">위</span></p>    <img src="https://img.megabox.co.kr/SharedImg/2024/03/14/Thl1BUgFi5S8ERe74Vf2kkRrDutrLu6l_420.jpg" alt="댓글부대" class="poster lozad" onerror="noImg(this)">    <div class="curation">        <p class="film" style="display: none">필름 소사이어티</p>        <p class="classic" style="display: none">클래식 소사이어티</p>    </div>    <div class="screen-type2">        <p name="dbcScrean" style="display: none"><img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_db.png" alt="dolby"></p>        <p name="mxScreen" style="display: none"><img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_atmos.png" alt="dolbyatmos"></p>    </div>    <div class="movie-score" style="opacity: 0;">        <a href="#" class="wrap movieBtn" data-no="24010500" title="댓글부대 상세보기">            <div class="summary">
+  대기업에 대한 기사를 쓴 후 정직당한 기자 '임상진'에게 온라인 여론을 조작했다는 익명의 제보자가 나타나면서 벌어지는 이야기</div>            <div class="my-score equa" style="display: none;">                <div class="preview">                    <p class="tit">관람평</p>                    <p class="number">0<span class="ir">점</span></p>                </div>            </div>        </a>    </div></div><div class="tit-area">    <p class="movie-grade age-15">,</p>    <p title="댓글부대" class="tit">댓글부대</p></div><div class="rate-date">    <span class="rate">예매율 2%</span>    <span class="date">개봉일 2024.03.27</span></div><div class="btn-util">    <button type="button" class="button btn-like" data-no="24010500"><i title="보고싶어 안함" class="iconset ico-heart-toggle-gray intrstType"></i> <span>497</span></button>    <p class="txt movieStat1" style="display: none">상영예정</p>    <p class="txt movieStat2" style="display: none">3월 개봉예정</p>    <p class="txt movieStat5" style="display: none">개봉예정</p>    <p class="txt movieStat6" style="display: none">상영종료</p>    <div class="case col-2 movieStat3" style="display: none">        <a href="#" class="button purple bokdBtn" data-no="24010500" title="영화 예매하기">예매</a>        <a href="#" class="button purple img splBtn" data-no="24010500"><img src="/static/pc/images/common/btn/mov_list_db_btn.png" alt="dolby 버튼"></a>    </div>    <div class="case movieStat4" style="">        <a href="#" class="button purple bokdBtn" data-no="24010500" title="영화 예매하기">예매</a>    </div></div></li><li tabindex="0" class="no-img"><div class="movie-list-info">    <p class="rank" style="">8<span class="ir">위</span></p>    <img src="https://img.megabox.co.kr/SharedImg/2024/03/08/2MQEG7CWIkZuekOIErgQU12isYQhKTbQ_420.jpg" alt="가여운 것들" class="poster lozad" onerror="noImg(this)">    <div class="curation">        <p class="film" style="">필름 소사이어티</p>        <p class="classic" style="display: none">클래식 소사이어티</p>    </div>    <div class="screen-type2">        <p name="dbcScrean" style="display: none"><img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_db.png" alt="dolby"></p>        <p name="mxScreen" style="display: none"><img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_atmos.png" alt="dolbyatmos"></p>    </div>    <div class="movie-score" style="opacity: 0;">        <a href="#" class="wrap movieBtn" data-no="24005200" title="가여운 것들 상세보기">            <div class="summary">
+  천재적이지만 특이한 과학자 갓윈 백스터(윌렘 대포)에 의해 새롭게 되살아난 벨라 백스터(엠마 스톤). 갓윈의 보호를 받으며 성장하던 벨라는 날이 갈수록 세상에 대한 호기심과 새로운 경험에 대한 갈망이 넘쳐난다.
+  
+  아름다운 벨라에게 반한 짓궂고 불손한 바람둥이 변호사 덩컨 웨더번(마크 러팔로)이 더 넓은 세계를 탐험하자는 제안을 하자, 벨라는 새로운 경험에 대한 갈망으로 대륙을 횡단하는 여행을 떠나고 처음 보는 광경과 새롭게 만난 사람들을 통해 놀라운 변화를 겪게 되는데….
+  
+  </div>
+        <!--// movie-list -->
+  
+        <div class="btn-more v1" id="addMovieDiv" style="">
+          <button type="button" class="btn" id="btnAddMovie">더보기 <i class="iconset ico-btn-more-arr"></i></button>
+        </div>
+  
+        <!-- 검색결과 없을 때 -->
+        <div class="movie-list-no-result" id="noDataDiv" style="display: none;">
+          <p>현재 상영중인 영화가 없습니다.</p>
+        </div>
+  
+  
+        <!-- 검색결과 없을 때 -->
+        <div class="movie-list-no-favor" id="noMyGenre" style="display: none;">
+          <p>선호장르가 등록되지 않았습니다. 선호하시는 장르를 등록해보세요.</p>
+          <div class="btn-group center">
+              <a href="/mypage/additionalinfo" class="button large purple" title="선호장르설정하기 페이지로 이동">선호장르설정하기</a>
+          </div>
+        </div>
+  
+  
+      </div>
+    </div>
+  </div>
+</body>
+</html>
