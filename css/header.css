@@ -1,0 +1,86 @@
+header {
+  border-bottom: 1.5px solid #503396;
+  height: 90px;
+}
+
+nav.menu {
+  height: 100%;
+  padding-top: 15px;
+}
+
+.inner {
+  width: 1160px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+nav.menu > .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* gnb_left */
+
+nav.menu .gnb_left ul {
+  display: flex;
+  margin-top: 20px;
+}
+
+nav.menu .gnb_left ul li {
+  width: 120px;
+  height: 40px;
+  /* border: 1px solid #000; */
+}
+
+nav.menu .gnb_left ul li:nth-child(1) {
+  justify-content: start;
+  display: flex;
+}
+
+nav.menu .gnb_left ul li.icon a {
+  margin-right: 20px;
+}
+
+nav.menu .gnb_left ul li a {
+}
+
+/* logo */
+
+nav.menu .logo {
+  /* background: #20a49d; */
+  width: 160px;
+}
+
+nav.menu .logo a {
+}
+
+nav.menu .logo a img {
+  width: 100%;
+}
+
+/* gnb_right */
+
+nav.menu .gnb_right ul {
+  display: flex;
+
+  margin-top: 20px;
+  height: 40px;
+}
+
+nav.menu .gnb_right ul li {
+  width: 120px;
+  /* border: 1px solid #000; */
+  /* height: 40px; */
+  justify-content: end;
+  display: flex;
+}
+
+nav.menu .gnb_right ul li.icon a {
+  margin-left: 20px;
+}
+
+/* menu hover */
+
+.menu_line_hover {
+}
