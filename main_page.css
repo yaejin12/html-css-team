@@ -2,7 +2,7 @@
 
 .center {
 	position: absolute;
-	top: 50%;	
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -117,7 +117,7 @@ button {
 }
 
 #main_page .content ul.search li:nth-child(1) button {
-	
+
 	color: gray;
 	font-size: 18px;
 }
@@ -154,6 +154,11 @@ button {
 #main_page .benefit .area .title {
 	display: flex;
 	justify-content: space-between;
+}
+
+#main_page .benefit .area .title h2 {
+	font-size: 30px;
+	font-weight: 600;
 }
 
 #main_page .benefit .area .benefit-lists {
@@ -235,3 +240,58 @@ button {
 	z-index: -1;
 }
 
+#main_page .curation {
+	height: 840px;
+	background-color: #252451;
+	color: #fff;
+	position: relative;
+}
+
+#main_page .curation .area {
+	width: 1100px;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -25%);
+}
+
+#main_page .curation .area>.title {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+#main_page .curation .area>.title h2 {
+	font-size: 30px;
+	font-weight: 500;
+}
+
+#main_page .curation .area .content-area {
+	display: flex;
+}
+
+#main_page .curation .area .content-area .content-img {
+	margin-right: 45px;
+}
+
+#main_page .curation .area .content-area .content-text .title {
+	padding-bottom: 30px;
+	border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+	margin-bottom: 45px;
+}
+
+#main_page .curation .area .content-area .content-text .text {
+	margin-bottom: 7px;
+}
+
+#main_page .curation .area .content-area .content-text ul.others {
+	display: flex;
+	justify-content: space-between;
+}
+
+#main_page .curation .area .content-area .content-text ul.others li a p {
+	width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
