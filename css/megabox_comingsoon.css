@@ -137,6 +137,7 @@ main .content .movie-list .movie-search input {
   background: none;
   border: none;
   width: 150px;
+  outline: none;
 }
 
 main .content .movie-list .movie-search a i.fas {
@@ -393,4 +394,33 @@ main
   .movie_info_button
   button.ticket.two_button {
   width: calc(((100% - 3px) / 3) * 2);
+}
+
+/* top_nav */
+
+main .content .movie-main-list .top_button {
+  width: 60px;
+  height: 60px;
+  background: #444444;
+  border-radius: 60px;
+  box-shadow: 1px 0 5px rgba(65, 65, 65, 0.8);
+  position: fixed;
+  right: 160px;
+  bottom: 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .content .movie-main-list .top_button a {
+  color: #fff;
+  font-weight: 500;
+  padding: 20px;
+  display: block;
+}
+main .content .movie-main-list .top_button a i {
+  display: block;
+  color: #fff;
+  text-align: center;
 }
