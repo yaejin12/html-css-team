@@ -3,15 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./boxoffice.css">
+  <title>MEET PLAY SHARE, 메가박스</title>
+  <link rel="stylesheet" href="../css/boxoffice.css">
 
 </head>
 
 <body>
 
   <div class="body-wrap">
-    <header id="header">123</header>
+    <header>
+      <a name="nav"></a>
+      <nav class="menu">
+        <div class="inner">
+          <div class="link_left">
+            <a href="#">VIP LOUNGE</a>
+            <a href="#">멤버십</a>
+            <a href="#">고객센터</a>
+          </div>
+          <div class="link_right">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+            <a href="#">빠른예매</a>
+          </div>
+          <div class="gnb_left">
+            <ul>
+              <li class="icon">
+                <a href="#"><img src="../img/ico-sitemap.png" alt="" /></a>
+                <a href="#"><img src="../img/ico-search.png" alt="" /></a>
+              </li>
+              <li class="gnb_line"><a href="#">영화</a></li>
+              <li class="gnb_line"><a href="#">예매</a></li>
+              <li class="gnb_line"><a href="#">극장</a></li>
+            </ul>
+          </div>
+          <div class="logo">
+            <a href="#"><img src="../img/logo_c.png" alt="" /></a>
+          </div>
+          <div class="gnb_right">
+            <ul>
+              <li class="gnb_line"><a href="#">이벤트</a></li>
+              <li class="gnb_line"><a href="#">스토어</a></li>
+              <li class="gnb_line"><a href="#">혜택</a></li>
+              <li class="icon">
+                <a href="#"><img src="../img/ico-schedule 1.png" alt="" /></a>
+                <a href="#"><img src="../img/ico-mymega.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
     
     <div class="container">
       <div class="page-util">
@@ -52,7 +94,7 @@
             <div class="movie-search">
               <input type="text" title="영화명을 입력하세요" id="ibxMovieNmSearch" name="ibxMovieNmSearch" 
               placeholder="영화명 검색" class="input-text">
-              <button type="button" class="btn-search-input" id="btnSearch">검색</button>
+              <button type="button"></button>
             </div>
           </div>
 
@@ -82,7 +124,7 @@
                         각자의 목표를 위해 비밀스러운 임무를 수행한다.
                     
                       </div>            
-                      <div class="my-score big" style="display: none;">                
+                      <div class="my-score big">                
                         <div class="preview">                    
                           <p class="tit">관람평</p>                    
                           <p class="number">9</p>                
@@ -102,7 +144,7 @@
                   <span class="date">개봉일 2024.03.20</span>
                 </div>
 
-                <div class="btn-util">    
+                <div class="btn-util clearfix">    
                   <button type="button" class="button btn-like2" data-no="24004100">
                     <i title="#" class="iconset"></i>
                     <span>942</span>
@@ -111,10 +153,10 @@
                   <div class="case">        
                     <a href="#" class="button purple bokdBtn" data-no="24010700" title="영화 예매하기">예매</a>        
                   </div>
-                  
-                  <div class="case2">
+
+                  <div class="case2 rhr3">
                     <a href="#" class="button purple img splBtn" data-no="24010700">
-                      <img src="../mov_list_db_btn.png" alt="dolby 버튼">
+                      <img src="../img/mov_list_db_btn.png" alt="dolby 버튼">
                     </a>  
                   </div>
                 </div>
@@ -131,7 +173,7 @@
                     <p name="dbcScrean" style="display: none">
                       <img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_db.png" alt="dolby">
                     </p>        
-                    <p name="mxScreen" style="">
+                    <p name="mxScreen">
                       <img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_atmos.png" alt="dolbyatmos">
                     </p>    
                   </div>    
@@ -142,9 +184,7 @@
 
                          미국 LA, 거액의 의뢰를 받은 무당 ‘화림’(김고은)과 ‘봉길’(이도현)은
                          기이한 병이 대물림되는 집안의 장손을 만난다.
-                         조상의 묫자리가 화근임을 알아챈 ‘화림’은 이장을 권하고,
-                         돈 냄새를 맡은 최고의 풍수사 ‘상덕’(최민식)과 장의사 ‘영근’(유해진)이 합류한다.
-                  
+     
                       </div>            
                       <div class="my-score big">                
                         <div class="preview">                    
@@ -166,20 +206,22 @@
                   <span class="date">개봉일 2024.02.22</span>
                 </div>
 
-                <div class="btn-util">    
-                  <button type="button" class="button btn-like" data-no="24004100">
+                <div class="btn-util clearfix">    
+                  <button type="button" class="button btn-like2" data-no="24004100">
                     <i title="#" class="iconset"></i>
                     <span>3.4k</span>
                   </button>    
-  
+                  
                   <div class="case">        
                     <a href="#" class="button purple bokdBtn" data-no="24010700" title="영화 예매하기">예매</a>        
+                  </div>
+
+                  <div class="case2 rhr3">
                     <a href="#" class="button purple img splBtn" data-no="24010700">
-                      <img src="../mov_list_db_btn.png" alt="dolby 버튼">
-                    </a>    
+                      <img src="../img/mov_list_db_btn.png" alt="dolby 버튼">
+                    </a>  
                   </div>
                 </div>
-
               </li>
 
               <li tabindex="0" class="no-img">
@@ -189,10 +231,10 @@
                     <img src="https://img.megabox.co.kr/SharedImg/2024/02/07/LVp8bCwlBWpI9BHacDmo6Vun9nm5n9PW_420.jpg" alt="듄: 파트2" class="poster lozad" onerror="noImg(this)">    
 
                     <div class="screen-type2">        
-                      <p name="dbcScrean" style="">
+                      <p name="dbcScrean">
                         <img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_db.png" alt="dolby">
                       </p>        
-                      <p name="mxScreen" style="">
+                      <p name="mxScreen">
                         <img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_atmos.png" alt="dolbyatmos">
                       </p>    
                     </div>    
@@ -224,18 +266,21 @@
                   <span class="date">개봉일 2024.02.28</span>
                 </div>
 
-                <div class="btn-util">    
-                  <button type="button" class="button btn-like" data-no="24004100">
+                <div class="btn-util clearfix">    
+                  <button type="button" class="button btn-like2" data-no="24004100">
                     <i title="#" class="iconset"></i>
                     <span>3.1k</span>
                   </button>    
-  
+                  
                   <div class="case">        
                     <a href="#" class="button purple bokdBtn" data-no="24010700" title="영화 예매하기">예매</a>        
+                  </div>
+
+                  <div class="case2 rhr3">
                     <a href="#" class="button purple img splBtn" data-no="24010700">
-                      <img src="../mov_list_db_btn.png" alt="dolby 버튼">
-                    </a>    
-                  </div>       
+                      <img src="../img/mov_list_db_btn.png" alt="dolby 버튼">
+                    </a>  
+                  </div>
                 </div>
 
               </li>
@@ -283,16 +328,15 @@
                   <span class="date">개봉일 2024.03.20</span>
                 </div>
 
-                <div class="btn-util">    
-                  <button type="button" class="button btn-like" data-no="24011200">
+                <div class="btn-util clearfix">    
+                  <button type="button" class="button btn-like2" data-no="24004100">
                     <i title="#" class="iconset"></i>
-                    <span>120</span>
+                    <span>138</span>
                   </button>    
-
-                  <div class="second">        
+                  
+                  <div class="case thr2">        
                     <a href="#" class="button purple bokdBtn" data-no="24010700" title="영화 예매하기">예매</a>        
                   </div>
-                </div>
               </li>
 
               <li tabindex="0" class="no-img">
@@ -302,7 +346,7 @@
                   <img src="https://img.megabox.co.kr/SharedImg/2024/03/18/YlRiXGE3UAfnGuFiMj0D9CULBf7dZDE1_420.jpg" alt="밥 말리: 원 러브" class="poster lozad" onerror="noImg(this)">    
   
                   <div class="screen-type2">        
-                    <p name="dbcScrean" style="">
+                    <p name="dbcScrean">
                       <img src="https://img.megabox.co.kr/static/pc/images/common/btn/mov_top_tag_db.png" alt="dolby">
                     </p>        
                     <p name="mxScreen" style="display: none">
@@ -339,14 +383,14 @@
                   <span class="date">개봉일 2024.03.13</span>
                 </div>
 
-                <div class="btn-util">    
-                  <button type="button" class="button btn-like" data-no="24010300">
+                <div class="btn-util clearfix">    
+                  <button type="button" class="button btn-like2" data-no="24004100">
                     <i title="#" class="iconset"></i>
-                    <span>231</span>
+                    <span>228</span>
                   </button>    
-
-                  <div class="second">        
-                    <a href="#" class="button purple bokdBtn" data-no="24010700" title="영화 예매하기">예매</a>           
+                  
+                  <div class="case thr2">        
+                    <a href="#" class="button purple bokdBtn" data-no="24010700" title="영화 예매하기">예매</a>        
                   </div>
                 </div>
 
@@ -395,14 +439,14 @@
                   <span class="date">개봉일 2024.03.13</span>
                 </div>
 
-                <div class="btn-util">    
-                  <button type="button" class="button btn-like" data-no="24007900">
-                    <i title="" class="iconset"></i>
-                    <span>287</span>
+                <div class="btn-util clearfix">    
+                  <button type="button" class="button btn-like2" data-no="24004100">
+                    <i title="#" class="iconset"></i>
+                    <span>293</span>
                   </button>    
-                   
-                  <div class="second">        
-                    <a href="#" class="button purple bokdBtn" data-no="24010700" title="영화 예매하기">예매</a>          
+                  
+                  <div class="case thr2">        
+                    <a href="#" class="button purple bokdBtn" data-no="24010700" title="영화 예매하기">예매</a>        
                   </div>
                 </div>
               </li>
@@ -427,10 +471,10 @@
                       <div class="summary">
                         대기업에 대한 기사를 쓴 후 정직당한 기자 '임상진'에게 온라인 여론을 조작했다는 익명의 제보자가 나타나면서 벌어지는 이야기
                       </div>            
-                      <div class="my-score equa" style="display: none;">                
+                      <div class="my-score equa">                
                         <div class="preview">                    
                           <p class="tit">관람평</p>                    
-                          <p class="number">0</p>                
+                          <p class="number">7.2</p>                
                         </div>            
                       </div>        
                     </a>    
@@ -443,18 +487,18 @@
                 </div>
 
                 <div class="rate-date">    
-                  <span class="rate">예매율 2%</span>    
+                  <span class="rate">예매율 2.0%</span>    
                   <span class="date">개봉일 2024.03.27</span>
                 </div>
 
-                <div class="btn-util">    
-                  <button type="button" class="button btn-like" data-no="24010500">
+                <div class="btn-util clearfix">    
+                  <button type="button" class="button btn-like2" data-no="24004100">
                     <i title="#" class="iconset"></i>
-                    <span>497</span>
+                    <span>563</span>
                   </button>    
-
-                  <div class="second">        
-                    <a href="#" class="button purple bokdBtn" data-no="24010700" title="영화 예매하기">예매</a>           
+                  
+                  <div class="case thr2">        
+                    <a href="#" class="button purple bokdBtn" data-no="24010700" title="영화 예매하기">예매</a>        
                   </div>
                 </div>
               </li>
@@ -500,35 +544,69 @@
                   <span class="date">개봉일 2024.03.06</span>
                 </div>
 
-                <div class="btn-util">    
-                  <button type="button" class="button btn-like" data-no="24005200">
+                <div class="btn-util clearfix">    
+                  <button type="button" class="button btn-like2" data-no="24004100">
                     <i title="#" class="iconset"></i>
-                    <span>944</span>
-                  </button>   
-                  <div class="second">        
+                    <span>956</span>
+                  </button>    
+                  
+                  <div class="case thr2">        
                     <a href="#" class="button purple bokdBtn" data-no="24010700" title="영화 예매하기">예매</a>        
                   </div>
+                
                 </div>
               </li>
             </ol>
           </div>
 
-          <div class="btn-more">
-            <button type="button" class="btn" id="btnAddMovie">더보기 <i class="iconset ico-btn-more-arr"></i></button>
-          </div>
 
+        </div> 
+
+        <div class="btn-more">
+          <button type="button" class="btn" id="btnAddMovie">더보기 <i class="iconset"></i></button>
         </div>
-
       </div>
     </div>
+
+    <footer>
+      <div class="inner">
+        <div class="footer_top">
+          <ul class="fnb">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">인재채용</a></li>
+            <li><a href="#">사회공헌</a></li>
+            <li><a href="#">제휴/광고/부대사업문의</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">위치기반서비스 이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">윤리경영</a></li>
+          </ul>
+          <button>
+            <a href="#"><i class="fas fa-search"></i>극장찾기</a>
+          </button>
+        </div>
+        <div class="footer_bottom">
+          <div class="footer_wrap">
+            <div class="footer_logo"><img src="../img/logo_b.png" alt="" /></div>
+            <p>
+              서울특별시 성동구 왕십리로 50, 6층 (성수동1가, 메가박스 스퀘어) ARS
+              1544-0070 대표이메일 m.dreamcenter@partner.megabox.co.kr
+              <br />대표자명 홍정인 · 개인정보보호책임자 강병철 · 사업자등록번호
+              211-86-59478 · 통신판매업신고번호 2023-서울성동-0177 <br />COPYRIGHT ©
+              MegaboxJoongAng, Inc. All rights reserved
+            </p>
+          </div>
+          <div class="footer_sns">
+            <a href="#"><img src="../img/ico-youtubeN.png" alt="" /></a>
+            <a href="#"><img src="../img/ico-instagramN.png" alt="" /></a>
+            <a href="#"><img src="../img/ico-facebookN.png" alt="" /></a>
+            <a href="#"><img src="../img/ico-twitterN.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
     
-    <div id="footer">
-
-
-    </div>
-
   </div>
-
   
 </body>
 </html>
