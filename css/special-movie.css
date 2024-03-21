@@ -1,0 +1,389 @@
+@import url(common.css);
+@import url(footer.css);
+@import url(header.css);
+
+
+/* container */
+
+.container {
+ width: 100%;
+ height: 1500px;
+}
+
+
+/* contents-inner-wrap */
+
+.container .contents-inner-wrap {
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
+}
+
+
+/* .page-util */
+
+.container .page-util {
+  width: 100%;
+  color: #53565B;
+  background: #f8f8fa;
+  margin: 0 auto;
+}
+.container .page-util .location {
+  width: 80%;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 50px;
+
+}
+.container .page-util .location > i {
+  color: #b7b7b7;
+  margin: 0 2px 7px 2px;
+  font-size: 14px;
+}
+.container .page-util .location a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+
+/* .container > #contents */
+
+#contents {
+  background: white;
+  width: 100%;
+  margin: 0;
+}
+
+
+/* #contents > .inner-wrap h2*/
+
+#contents .inner-wrap .title {
+
+  width: 80%;
+  margin: 30px auto;
+  letter-spacing: 1px;
+}
+#contents .inner-wrap h2.title {
+font-size: 26px;
+font-weight: 500;
+}
+
+
+/* #contents > .inner-wrap .tqp-list */
+
+#contents .inner-wrap .tap-list {
+  font-size: 16px;
+  width: 80%;
+  padding: 15px 0;
+  margin: 5px auto;
+}
+#contents .inner-wrap #top-menu ul li {
+  border: 0.5px solid lightgray;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  border-bottom: 1px solid #3C2A78;
+}
+#contents .inner-wrap #top-menu ul li a:nth-child(3) {
+  border: 1px solid #3C2A78;
+  border-bottom-style: none !important;
+}
+#contents .inner-wrap #top-menu ul li a { 
+  border-right: 0.5px solid lightgray;
+  width: 20%;
+  color: #53565B;
+  display: block;
+  text-align: center;
+  padding: 7px 0;
+}
+#contents .inner-wrap #top-menu ul li a:last-child {
+  border-right-style: none;
+}
+#contents > .inner-wrap .movie-list {
+  margin-top: 10px;
+}
+
+
+/* #contents > .inner-wrap .movie-list-util */
+
+#contents > .inner-wrap .movie-list-util {
+  width: 80%;
+  margin: 25px auto 0;
+}
+#contents > .inner-wrap .movie-list-util .topSort{
+  float: left;
+  width: 10%;
+}
+#contents > .inner-wrap .movie-list-util .topSort .onair-condition {
+  float: left;
+  margin: 0 0 0 20px;
+  padding: 1px 0 0 0;
+  color: #222;
+  line-height: 34px;
+}
+#contents > .inner-wrap .movie-list-util .topSort button { 
+  display: block;
+  padding: 0 0 0 30px; 
+  background: url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-on-air.png) no-repeat 0 2px;
+  border: 0;
+
+  cursor: pointer;
+}
+
+
+/* movie-list-util2 */ 
+
+#contents > .inner-wrap .movie-list-util2 {
+  position: relative;
+  width: 70%;
+}
+#contents > .inner-wrap .movie-list-util2 p.no-result-count {
+  width:70%;
+  position: relative;
+  top: -5px;
+}
+#contents > .inner-wrap .movie-list-util2 p.no-result-count p {
+  float: left;
+  position: absolute;
+  left: 3%;
+}
+#contents > .inner-wrap .movie-list-util2 p.no-result-count strong#totCnt {
+  font-weight: 600;
+  font-size: 18px;
+}
+#contents > .inner-wrap .movie-list-util2 div.movie-search {
+  width: 30%;
+  display: flex;
+  position: absolute;
+  right: -43%;
+  top: -15%;
+}
+#contents > .inner-wrap .movie-search {
+  border: 1px solid #dad8d8;
+  padding: 3px;
+  border-radius: 3px;
+  float: right;
+  width: 230px;
+  height: 42px;
+  font-size: 15px;
+  position: relative;
+}
+#contents > .inner-wrap .movie-search input {
+  height: 34px;
+  border: none;
+  width: 190px;
+}
+#contents > .inner-wrap .movie-search a i {
+  position: absolute;
+  right: 10px;
+  line-height: 34px;
+}
+
+
+/* #contents > .inner-wrap .movie-list */
+
+#contents .movie-list ul li {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+}
+#contents .movie-list ul li .movie-specify {  
+  width: 22%;
+  margin-left: 4% ;
+  margin-top: 2%;
+  position: relative;
+}
+#contents .movie-list ul li .movie-specify img {
+  width: 100%;
+  height: 330px;
+}
+#contents .movie-list ul li .movie-specify:nth-child(1),
+#contents .movie-list ul li .movie-specify:nth-child(5) {
+  margin-left: 0;
+}
+#contents .movie-list ul li .movie-specify #rank {
+  font-size: 30px;
+  color: white;
+  text-shadow: 3px 3px 3px #000;
+  position: absolute;
+  top: 3%;
+  left: 10%;
+}
+#contents .movie-list ul li .movie-specify .gradient {
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.5s;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 330px;
+  padding: 10%;
+}
+#contents .movie-list ul li .movie-specify .gradient:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#contents .movie-list ul li .movie-specify .gradient p:first-child {
+  text-align: justify;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  opacity: 0;
+  height: 70%;
+  overflow: hidden;
+}
+#contents .movie-list ul li .movie-specify .gradient #evaluation {
+  height: 30%;
+  margin-top: 20%;
+  border-top: 0.5px solid #dad8d8;
+  opacity: 0;
+}
+#contents .movie-list ul li .movie-specify .gradient #evaluation span {
+  color: white;
+  margin-left: 25%;
+  font-size: 20px;
+  font-style: italic;
+  opacity: 0;
+}
+#contents .movie-list ul li .movie-specify .gradient #evaluation strong {
+  font-size: 23px;
+  margin-left: 3%;
+  color: mediumaquamarine;
+  font-style: italic;
+  opacity: 0;
+}
+#contents .movie-list ul li .movie-specify:hover .gradient p:first-child,
+#contents .movie-list ul li .movie-specify:hover .gradient #evaluation,
+#contents .movie-list ul li .movie-specify:hover .gradient #evaluation span,
+#contents .movie-list ul li .movie-specify:hover .gradient #evaluation strong {
+  opacity: 1;
+}
+
+#contents .movie-list ul li:nth-child(3) {
+  margin-right: 0;
+}
+#contents .movie-list .movie-specify > img {
+  display: block;
+  width: 100%;
+}
+#contents .movie-list .movie-specify .intro .title-area {
+  font-size: 1.3333em;
+  font-weight: 400;
+  overflow: hidden;
+  display: flex;
+  margin-top: 14px;
+}
+#contents .movie-list .movie-specify .intro .title-area .grade-age:first-child {
+  width: 24px;
+  height: 24px;
+}
+#contents .movie-list ul li .movie-specify .intro .title-area p#age-all {
+  background: url(../img/movie_special-img/age-ALL.png);
+  background-size: 24px 24px;
+}
+#contents .movie-list ul li .movie-specify .intro .title-area p#age-12 {
+  background: url(../img/movie_special-img/age-12.png);
+  background-size: 24px 24px;
+}
+#contents .movie-list ul li .movie-specify .intro .title-area p#age-15 {
+  background: url(../img/movie_special-img/age-15.png);
+  background-size: 24px 24px;
+}
+#contents .movie-list ul li .movie-specify .intro .title-area p.title {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0 0 3% 5%;
+  width: 60%;
+}
+#contents .movie-list .movie-specify .intro .rate-date {
+  display: flex;
+  justify-content: space-between;
+}
+#contents .movie-list .movie-specify .intro .rate-date .rate {
+  font-weight: 500;
+  font-size: 13px;
+  width: 30%;
+  color: #53565B;
+  letter-spacing: -1px;
+  text-align: center;
+}
+#contents .movie-list .movie-specify .intro .rate-date .date {
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #53565B;
+  width: 70%;
+  border-left: 1px solid #53565B;
+  margin-left: 5%;
+  
+}
+
+
+/* movie-list .btn-util */
+
+#contents .movie-list .movie-specify .intro .btn-util {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px auto;
+}
+#contents .movie-list .movie-specify .intro .btn-util a{
+  border-radius: 6px; 
+  display: block;
+  text-align: center;
+  transition: all 0.3s;
+}
+#contents .movie-list .movie-specify .intro .btn-util a#like {
+  flex: 3;
+  display: block;
+  border: 0.5px solid #90969e;
+  padding: 5px 0;
+  margin-right: 10px;
+}
+#contents .movie-list .movie-specify .intro .btn-util a#like i {
+  color: #90969e;
+  margin-right: 2px;
+  font-size: 14px;
+}
+#contents .movie-list .movie-specify .intro .btn-util a#like i > strong {
+  color:#3C2A78;
+  font-size: 11px;
+  font-weight: 700;
+}
+#contents .movie-list .movie-specify .intro .btn-util a.purchase {
+  flex: 6;
+  display: block;
+  border: 0.5px solid white;
+  padding: 5px 0;
+  color: white;
+  background: #3C2A78;
+} 
+#contents .movie-list .movie-specify .intro .btn-util a#soon {
+  border: 0.5px solid white;
+  padding: 5px 0;
+  color: white;
+  background: #53565B;
+}
+#contents .movie-list .movie-specify .intro .btn-util a:hover,
+#contents .movie-list .movie-specify .intro .btn-util a.purchase:hover {
+  border-radius: 6px; 
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* more section*/
+
+.more {
+  border: 0.4px solid #53565B;
+  background: #f5f4f4;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.more a {
+  color: #9ea1a5;
+}
