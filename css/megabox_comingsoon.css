@@ -493,7 +493,7 @@ main .content .movie-main-list .top_button {
   border-radius: 60px;
   box-shadow: 1px 0 5px rgba(65, 65, 65, 0.8);
   position: fixed;
-  right: 160px;
+  right: 60px;
   bottom: 0;
   z-index: 99;
   display: flex;
