@@ -1,10 +1,10 @@
 /* common css */
 /* css파일이 css파일 import */
 @import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css");
-@import url(http://www.openhiun.com/hangul/nanumbarungothic.css);
+/*@import url(http://www.openhiun.com/hangul/nanumbarungothic.css);*/
 
 /* 글꼴 */
-@import url('http://www.openhiun.com/hangul/nanumbarungothic.css');
+/*@import url('http://www.openhiun.com/hangul/nanumbarungothic.css');*/
 
 /* fontawesome */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
