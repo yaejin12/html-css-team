@@ -732,7 +732,7 @@ button {
 
 #main_page .info .area:last-child .contact .cs {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 #main_page .info .area .contact .cs li{
