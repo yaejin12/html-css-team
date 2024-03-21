@@ -86,7 +86,7 @@ main .content .tab-list ul.top-Menu {
 }
 
 main .content .tab-list ul.top-Menu li {
-  width: calc((100% -0) / 5);
+  width: calc(100% / 5);
   /* border: 2px solid #8e8e8e; */
 
   border: 1px solid #ebebeb;
