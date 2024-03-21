@@ -5,13 +5,54 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>메가박스</title>
-	<link rel="stylesheet" href="./main_page.css">
+	<link rel="stylesheet" href="./css/main_page.css">
+	<link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>
 	<header>
-		<h1 class="logo"></h1>
+		<a name="nav"></a>
+		<nav class="menu">
+			<div class="inner">
+				<div class="link_left">
+					<a href="#">VIP LOUNGE</a>
+					<a href="#">멤버십</a>
+					<a href="#">고객센터</a>
+				</div>
+				<div class="link_right">
+					<a href="#">로그인</a>
+					<a href="#">회원가입</a>
+					<a href="#">빠른예매</a>
+				</div>
+				<div class="gnb_left">
+					<ul>
+						<li class="icon">
+							<a href="#"><img src="./img/ico-sitemap.png" alt="" /></a>
+							<a href="#"><img src="./img/ico-search.png" alt="" /></a>
+						</li>
+						<li class="gnb_line"><a href="./html/boxoffice.html">영화</a></li>
+						<li class="gnb_line"><a href="#">예매</a></li>
+						<li class="gnb_line"><a href="#">극장</a></li>
+					</ul>
+				</div>
+				<div class="logo">
+					<a href="#"><img src="https://img.megabox.co.kr/static/pc/images/common/ci/logo-white_new2.png" alt="" /></a>
+				</div>
+				<div class="gnb_right">
+					<ul>
+						<li class="gnb_line"><a href="#">이벤트</a></li>
+						<li class="gnb_line"><a href="#">스토어</a></li>
+						<li class="gnb_line"><a href="#">혜택</a></li>
+						<li class="icon">
+							<a href="#"><img src="./img/ico-schedule 1.png" alt="" /></a>
+							<a href="#"><img src="./img/ico-mymega.png" alt="" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</header>
+
 	<section id="main_page">
 		<div class="content">
 			<div class="bg">
@@ -28,23 +69,71 @@
 				</div>
 				<ul class="movie">
 					<li>
+						<span>1</span>
+						<div class="dolby">
+							<div><img src="./img/mov_top_tag_db.png" alt=""></div>
+							<div><img src="./img/mov_top_tag_atmos.png" alt=""></div>
+						</div>
 						<div class="img-box">
-							<img src="./main_img/spyfamily.jpg" alt="">
+							<img src="./img/main_img/spyfamily.jpg" alt="">
+							<div class="text-box">
+								<p>
+									“전부 잘 알 거야… 묘 하나 잘못 건들면 어떻게 되는지”</p>
+							</div>
+						</div>
+						<div class="btn-box">
+							<a href=""><button><i class="fa-regular fa-heart"></i> 3.4k</button></a>
+							<a href=""><button>예매</button></a>
 						</div>
 					</li>
 					<li>
+						<span>2</span>
+						<div class="dolby">
+							<div><img src="./img/mov_top_tag_db.png" alt=""></div>
+							<div><img src="./img/mov_top_tag_atmos.png" alt=""></div>
+						</div>
 						<div class="img-box">
-							<img src="./main_img/pamyo.jpg" alt="">
+							<img src="./img/main_img/pamyo.jpg" alt="">
+							<div class="text-box">
+								<p>
+									“전부 잘 알 거야… 묘 하나 잘못 건들면 어떻게 되는지”</p>
+							</div>
+						</div>
+						<div class="btn-box">
+							<a href=""><button><i class="fa-regular fa-heart"></i> 3.4k</button></a>
+							<a href=""><button>예매</button></a>
 						</div>
 					</li>
 					<li>
+						<span>3</span>
+						<div class="dolby">
+							<div><img src="./img/mov_top_tag_db.png" alt=""></div>
+							<div><img src="./img/mov_top_tag_atmos.png" alt=""></div>
+						</div>
 						<div class="img-box">
-							<img src="./main_img/dune.jpg" alt="">
+							<img src="./img/main_img/dune.jpg" alt="">
+							<div class="text-box">
+								<p>
+									“전부 잘 알 거야… 묘 하나 잘못 건들면 어떻게 되는지”</p>
+							</div>
+						</div>
+						<div class="btn-box">
+							<a href=""><button><i class="fa-regular fa-heart"></i> 3.4k</button></a>
+							<a href=""><button>예매</button></a>
 						</div>
 					</li>
 					<li>
+						<span>4</span>
 						<div class="img-box">
-							<img src="./main_img/mockspark.jpg" alt="">
+							<img src="./img/main_img/mockspark.jpg" alt="">
+							<div class="text-box">
+								<p>
+									“전부 잘 알 거야… 묘 하나 잘못 건들면 어떻게 되는지”</p>
+							</div>
+						</div>
+						<div class="btn-box">
+							<a href=""><button><i class="fa-regular fa-heart"></i> 3.4k</button></a>
+							<a href=""><button>예매</button></a>
 						</div>
 					</li>
 				</ul>
@@ -55,17 +144,20 @@
 							<button><i class="fa-solid fa-magnifying-glass"></i></button>
 						</span>
 					</li>
-					<li>상영시간표</li>
-					<li>박스오피스</li>
-					<li>빠른예매</li>
+					<li><img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-schedule-main.png" alt="">
+						상영시간표</li>
+					<li><img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-boxoffice-main.png" alt="">
+						박스오피스</li>
+					<li><img src="https://img.megabox.co.kr/static/pc/images/common/ico/ico-quick-reserve-main.png"
+							alt=""> 빠른예매</li>
 				</ul>
 				<div class="mouse_icon">
-					<img src="./main_img/ico-mouse.png" alt="">
+					<img src="./img/main_img/ico-mouse.png" alt="">
 				</div>
 			</div>
 		</div>
 		<div class="benefit">
-			<div class="area center">
+			<div class="area">
 				<div class="title">
 					<h2>혜택</h2>
 					<a href="#" class="more">
@@ -76,18 +168,18 @@
 					<div class="contents">
 						<div class="content1">
 							<div class="img-box">
-								<img src="./main_img/jangkookyoung_text.jpg" alt="">
+								<img src="./img/main_img/jangkookyoung_text.jpg" alt="">
 							</div>
 							<div class="img-box">
-								<img src="./main_img/jangkookyoung.jpg" alt="">
+								<img src="./img/main_img/jangkookyoung.jpg" alt="">
 							</div>
 						</div>
 						<div class="content2">
 							<div class="img-box">
-								<img src="./main_img/jangkookyoung_sale.jpg" alt="">
+								<img src="./img/main_img/jangkookyoung_sale.jpg" alt="">
 							</div>
 							<div class="img-box">
-								<img src="./main_img/talk.jpeg" alt="">
+								<img src="./img/main_img/talk.jpeg" alt="">
 							</div>
 						</div>
 					</div>
@@ -98,23 +190,34 @@
 				</div>
 				<ul class="bene-ico">
 					<li>
-						<img src="https://www.megabox.co.kr/static/pc/images/common/ico/ico-vip-main.png" alt="">
+						<div class="img-box">
+							<img src="https://www.megabox.co.kr/static/pc/images/common/ico/ico-vip-main.png" alt="">
+						</div>
 						<span>VIP LOUNGE</span>
 					</li>
 					<li>
-						<img src="https://www.megabox.co.kr/static/pc/images/common/ico/ico-membership-main.png" alt="">
+						<div class="img-box">
+							<img src="https://www.megabox.co.kr/static/pc/images/common/ico/ico-membership-main.png"
+								alt="">
+						</div>
 						<span>멤버쉽</span>
 					</li>
 					<li>
-						<img src="https://www.megabox.co.kr/static/pc/images/common/ico/ico-card-main.png" alt="">
+						<div class="img-box">
+							<img src="https://www.megabox.co.kr/static/pc/images/common/ico/ico-card-main.png" alt="">
+						</div>
 						<span>할인카드안내</span>
 					</li>
 					<li>
-						<img src="https://www.megabox.co.kr/static/pc/images/common/ico/ico-event-main.png" alt="">
+						<div class="img-box">
+							<img src="https://www.megabox.co.kr/static/pc/images/common/ico/ico-event-main.png" alt="">
+						</div>
 						<span>이벤트</span>
 					</li>
 					<li>
-						<img src="https://www.megabox.co.kr/static/pc/images/common/ico/ico-store-main.png" alt="">
+						<div class="img-box">
+							<img src="https://www.megabox.co.kr/static/pc/images/common/ico/ico-store-main.png" alt="">
+						</div>
 						<span>스토어</span>
 					</li>
 				</ul>
@@ -122,7 +225,7 @@
 			<div class="area-ico"></div>
 		</div>
 		<div class="curation">
-			<div class="area center">
+			<div class="area">
 				<div class="title">
 					<h2>큐레이션</h2>
 					<a href="#" class="more">
@@ -133,11 +236,11 @@
 				<div class="content-area">
 					<div class="content-img">
 						<div class="img-box">
-							<img src="./main_img/poorthings.jpg" alt="">
+							<img src="./img/main_img/poorthings.jpg" alt="">
 						</div>
-						<div class="view-book">
-							<a href="#" class="view"><button>상세정보</button></a>
-							<div class="book"><button>예매</button></div>
+						<div class="btn-box">
+							<a href=""><button>상세정보</button></a>
+							<a href=""><button>예매</button></a>
 						</div>
 					</div>
 					<div class="content-text">
@@ -158,25 +261,25 @@
 						<ul class="others">
 							<li>
 								<a href="#">
-									<div class="img-box"><img src="./main_img/Renaissance.jpg" alt=""></div>
+									<div class="img-box"><img src="./img/main_img/Renaissance.jpg" alt=""></div>
 									<p>[2024 시네도슨트 in 코엑스] 중세를 극복한 르네상스</p>
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<div class="img-box"><img src="./main_img/fastlives.jpg" alt=""></div>
+									<div class="img-box"><img src="./img/main_img/fastlives.jpg" alt=""></div>
 									<p>패스트 라이브즈</p>
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<div class="img-box"><img src="./main_img/robotdream.jpg" alt=""></div>
+									<div class="img-box"><img src="./img/main_img/robotdream.jpg" alt=""></div>
 									<p>로봇 드림</p>
 								</a>
 							</li>
 							<li>
 								<a href="#">
-									<div class="img-box"><img src="./main_img/grapeneck.jpg" alt=""></div>
+									<div class="img-box"><img src="./img/main_img/grapeneck.jpg" alt=""></div>
 									<p>[유럽 클래식 투어] 그라페넥 미드 썸머 갈라</p>
 								</a>
 							</li>
@@ -264,6 +367,44 @@
 			</div>
 		</div>
 	</section>
+	<footer>
+		<div class="inner">
+			<div class="footer_top">
+				<ul class="fnb">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">인재채용</a></li>
+					<li><a href="#">사회공헌</a></li>
+					<li><a href="#">제휴/광고/부대사업문의</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">위치기반서비스 이용약관</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">윤리경영</a></li>
+				</ul>
+				<button>
+					<a href="#"><i class="fas fa-search"></i>극장찾기</a>
+				</button>
+			</div>
+			<div class="footer_bottom">
+				<div class="footer_wrap">
+					<div class="footer_logo"><img src="./img/logo_b.png" alt="" /></div>
+					<p>
+						서울특별시 성동구 왕십리로 50, 6층 (성수동1가, 메가박스 스퀘어) ARS
+						1544-0070 대표이메일 m.dreamcenter@partner.megabox.co.kr
+						<br />대표자명 홍정인 · 개인정보보호책임자 강병철 · 사업자등록번호
+						211-86-59478 · 통신판매업신고번호 2023-서울성동-0177 <br />COPYRIGHT ©
+						MegaboxJoongAng, Inc. All rights reserved
+					</p>
+				</div>
+				<div class="footer_sns">
+					<a href="#"><img src="./img/ico-youtubeN.png" alt="" /></a>
+					<a href="#"><img src="./img/ico-instagramN.png" alt="" /></a>
+					<a href="#"><img src="./img/ico-facebookN.png" alt="" /></a>
+					<a href="#"><img src="./img/ico-twitterN.png" alt="" /></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
 </body>
 
 </html>
