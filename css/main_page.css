@@ -648,6 +648,7 @@ button {
 }
 
 #main_page .info .area .inner {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 50px;
@@ -664,7 +665,7 @@ button {
 	transform: translateY(-50%);
 }
 
-#main_page .info .area .inner li img {
+#main_page .info .area .inner li a img {
 	width: 100%;
 }
 
