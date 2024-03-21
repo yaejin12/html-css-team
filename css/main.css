@@ -8,7 +8,15 @@
  /* border: 3px solid red; */
  width: 100%;
  /* background: navy; */
- height: 2000px;
+ height: 1500px;
+}
+
+/* contents-inner-wrap */
+
+.container .contents-inner-wrap {
+  width: 90%;
+  position: relative;
+  margin: 0 auto;
 }
 
 /* .page-util */
@@ -27,7 +35,6 @@
  font-size: 18px;
  font-weight: 400;
  line-height: 50px;
- 
  margin: 2px auto;
 }
 .container .page-util .location > i {
@@ -96,6 +103,9 @@ font-weight: 600;
   border: 1px solid #3C2A78;
   border-bottom-style: none;
 }
+#contents > .inner-wrap .movie-list {
+  margin-top: 10px;
+}
 /* #contents > .inner-wrap .movie-list-util */
 
 #contents > .inner-wrap .movie-list-util {
@@ -108,18 +118,49 @@ font-weight: 600;
   width: 10%;
   /* border: 3px solid blue; */
 }
+#contents > .inner-wrap .movie-list-util .topSort .onair-condition {
+  float: left;
+  margin: 0 0 0 20px;
+  padding: 1px 0 0 0;
+  color: #222;
+  line-height: 34px;
+}
+#contents > .inner-wrap .movie-list-util .topSort button { 
+  display: block;
+  padding: 0 0 0 30px; 
+  background: url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-on-air.png) no-repeat 0 2px;
+  border: 0;
+
+  cursor: pointer;
+}
 
 /* movie-list-util2 */ 
 
+#contents > .inner-wrap .movie-list-util2 {
+  position: relative;
+  width: 70%;
+}
 #contents > .inner-wrap .movie-list-util2 p.no-result-count {
   /* background: palegoldenrod; */
-  width: 70%;
+  width:70%;
+  position: relative;
+}
+#contents > .inner-wrap .movie-list-util2 p.no-result-count p {
   float: left;
+  font-size: 14px;
+  position: absolute;
+  left: 3%;
+}
+#contents > .inner-wrap .movie-list-util2 p.no-result-count strong #totCnt {
+  font-weight: 600;
+  font-size: 18px;
 }
 #contents > .inner-wrap .movie-list-util2 div.movie-search {
-  float: right;
   width: 20%;
   display: flex;
+  position: absolute;
+  right: -41%;
+  top: -15%;
   /* border: 3px solid red; */ 
 }
 #contents > .inner-wrap .movie-search {
@@ -136,6 +177,7 @@ font-weight: 600;
   /* border: 3px solid green; */
 height: 34px;
 border: none;
+width: 110px;
 }
 #contents > .inner-wrap .movie-search a i {
   /* border: 3px solid violet; */
@@ -151,18 +193,23 @@ border: none;
 #contents .movie-list ul li {
   display: flex;
   flex-wrap: wrap;
+  /* justify-content: space-between; */
   /* border: 3px solid gold; */
   width: 80%;
-  margin: 10px auto;
-  /* justify-content: space-between; */
+  margin: 3% auto;
 }
 
 #contents .movie-list ul li .movie-specify {
   /* background: grey; */
+  
   /* border: 3px dotted dodgerblue; */
   width: 22%;
-  margin-right:3% ;
+  margin-left: 4% ;
   position: relative;
+}
+#contents .movie-list ul li .movie-specify:nth-child(1),
+#contents .movie-list ul li .movie-specify:nth-child(5) {
+  margin-left: 0;
 }
 #contents .movie-list ul li .movie-specify #rank {
   font-size: 30px;
@@ -178,39 +225,52 @@ border: none;
   position: absolute;
   top: 0;
   width: 100%;
-  height: 76.5%;
+  height: 68%;
   padding: 10%;
 }
 #contents .movie-list ul li .movie-specify .gradient:hover{
   background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.5sec;
 }
-#contents .movie-list ul li .movie-specify .gradient p {
+#contents .movie-list ul li .movie-specify .gradient p:first-child {
   text-align: justify;
+  font-size: 20px;
   color: white;
   display: flex;
-  justify-content: space-around;
   opacity: 0;
+  height: 70%;
   /* border: 3px solid red;   */
+  overflow: hidden;
 }
-#contents .movie-list ul li .movie-specify .gradient p span {
+#contents .movie-list ul li .movie-specify .gradient #evaluation {
+  height: 30%;
+  margin-top: 20%;
+  border-top: 0.5px solid #dad8d8;
+  opacity: 0;
+  /* border: 3px solid blue; */
+}
+#contents .movie-list ul li .movie-specify .gradient #evaluation span {
   color: mediumaquamarine;
-  margin-left: 10%;
-  font-size: 25px;
+  margin-left: 20%;
+  font-size: 20px;
+  font-style: italic;
   /* display: block; */
   opacity: 0;
   /* border: 3px solid blueviolet;   */
 }
-#contents .movie-list ul li .movie-specify .gradient p strong {
-  font-size: 25px;
+#contents .movie-list ul li .movie-specify .gradient #evaluation strong {
+  font-size: 23px;
   /* display: block; */
-  margin-left: 2%;
+  margin-left: 3%;
   color: white;
+  font-style: italic;
   opacity: 0;
   /* border: 3px solid blue;   */
 }
-#contents .movie-list ul li .movie-specify .gradient p:hover,
-#contents .movie-list ul li .movie-specify .gradient p span:hover, 
-#contents .movie-list ul li .movie-specify .gradient p strong :hover{
+#contents .movie-list ul li .movie-specify .gradient p:first-child:hover,
+#contents .movie-list ul li .movie-specify .gradient #evaluation:hover,
+#contents .movie-list ul li .movie-specify .gradient #evaluation span:hover, 
+#contents .movie-list ul li .movie-specify .gradient #evaluation strong:hover{
   opacity: 1;
 }
 
@@ -227,23 +287,33 @@ border: none;
   font-weight: 400;
   overflow: hidden;
   display: flex;
+  margin-top: 14px;
 }
 #contents .movie-list ul li .movie-specify .intro .title-area p.grade-age {
   width: 30px;
   height: 30px;
-  background: green;
   color: white;
   font-size: 20px;
   font-weight: 800;
   text-align: center;
   border-radius: 5px;
+  margin-right: 10px;
+}
+#contents .movie-list ul li .movie-specify .intro .title-area p#age-all {
+  background: green;
+}
+#contents .movie-list ul li .movie-specify .intro .title-area p#age-12 {
+  background: rgb(235, 231, 0);
+}
+#contents .movie-list ul li .movie-specify .intro .title-area p#age-15 {
+  background: orange;
 }
 #contents .movie-list ul li .movie-specify .intro .title-area p.title {
-  font-size: 1.3em;
+  font-size: 1.1em;
   width: 70%;
   white-space: nowrap;
   text-overflow: ellipsis;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 #contents .movie-list .movie-specify .intro .rate-date {
   /* border: 3px solid pink; */
@@ -297,25 +367,17 @@ border: none;
   color: white;
   background: #3C2A78;
 } 
- 
-  
-  /* img : after */
-/* position: absolute; */
 
- /* #contents .movie-list .movie-specify img::before {
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  background: rgba(#000, 0.8);
-  position: absolute;
- } */
-
-/* 컨텐츠를 흐르게 하고 싶을 떄  */
-/* 두줄로 나눠서 쓰거나 */
-/* float 걸거나 */
-/* flex 걸어서 하나하나 마진을 주거나 하면 됨... */
-
-/* hover div 효과 줘서 진행
-  그레이드는 p 만들어서 진행
-   */
+/* ㄷㅓㅂㅗㄱㅣ */
+.more {
+  border: 0.4px solid #53565B;
+  background: #f5f4f4;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+.more a {
+  color: #9ea1a5;
+}
