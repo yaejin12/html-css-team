@@ -28,6 +28,7 @@
   font-size: 25px;
   line-height: 31px;
   text-align: center;
+  flex-shrink: 0;
 }
 
 .fifteen {
@@ -245,6 +246,11 @@ main .content .movie-main-list ul li .movie_info .movie_title {
 main .content .movie-main-list ul li .movie_info .movie_title h3 {
   font-size: 24px;
   margin-top: -5px;
+}
+main .content .movie-main-list ul li:nth-child(1) .movie_info .movie_title h3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 main .content .movie-main-list ul li .movie_info .movie_info_day {
