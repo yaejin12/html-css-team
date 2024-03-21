@@ -289,7 +289,7 @@ button {
 }
 
 #main_page .content .movie li .img-box .text-box p {
-	padding: 15px;
+	padding: 20px 15px;
 }
 
 #main_page .content .movie li .img-box:hover .text-box {
@@ -392,6 +392,20 @@ button {
 
 #main_page .content .mouse_icon {
 	text-align: center;
+	animation: mouse 2.5s linear infinite;
+	/*animation-fill-mode: both;*/
+}
+
+@keyframes mouse {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(20px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
 }
 
 /* benefit */
@@ -475,6 +489,7 @@ button {
 	color: #fff;
 	display: flex;
 	justify-content: space-around;
+	cursor: pointer;
 }
 
 #main_page .benefit .area .bene-ico .img-box {
@@ -645,6 +660,10 @@ button {
 	border-radius: 10px;
 }
 
+#main_page .info .area .inner li:hover img {
+	transform: translateY(-50%);
+}
+
 #main_page .info .area .inner li img {
 	width: 100%;
 }
@@ -652,7 +671,7 @@ button {
 #main_page .info .notice {
 	border-top: 1px solid rgba(128, 128, 128, 0.5);
 	border-bottom: 1px solid rgba(128, 128, 128, 0.5);
-	padding: 10px 0;
+	padding: 15px 0;
 	margin-bottom: 50px;
 }
 
@@ -665,6 +684,49 @@ button {
 
 #main_page .info .notice div {
 	display: flex;
+	align-items: center;
+}
+
+#main_page .info .notice div h3 {
+	padding-right: 20px;
+	position: relative;
+}
+
+#main_page .info .notice .area div:first-child span {
+	padding-left: 20px;
+}
+
+#main_page .info .notice .area div:first-child h3::after {
+	content: '|';
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: rgba(128,128,128, 0.6);
+}
+
+#main_page .info .notice .area div:last-child span {
+	padding: 0 20px;
+	text-align: center;
+}
+
+#main_page .info .notice .area div:last-child>span:first-child {
+	position: relative;
+}
+
+#main_page .info .notice .area > div:last-child>span:first-child::after {
+	content: '|';
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: rgba(128,128,128, 0.6);
+}
+
+#main_page .info .notice .area div:last-child div span {
+	padding-right: 5px;
+}
+
+#main_page .info .notice .area div:last-child div i {
+	color: gray;
 }
 
 #main_page .info .area:last-child .contact .cs {
@@ -672,11 +734,23 @@ button {
 	justify-content: space-between;
 }
 
-#main_page .info .area .contact .cs li {
+#main_page .info .area .contact .cs li{
+	height: 100%;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#main_page .info .area .contact .cs li:hover span{
+	text-decoration: underline;
+}
+
+#main_page .info .area .contact .cs li .img-box{
+	width: 100%;
+	margin-bottom: 7px;
 }
 
 #main_page .info .area .contact .cs li span {
 	display: block;
 }
-
