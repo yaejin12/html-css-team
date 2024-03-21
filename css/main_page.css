@@ -2,9 +2,9 @@
 
 .center {
 	position: absolute;
-	top: 50%;
+	top: 25%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -25%);
 }
 
 img {
@@ -16,6 +16,154 @@ button {
 	border: none;
 	color: #000;
 }
+
+/* header */
+
+  header {
+	height: 90px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 1);
+	color: #fff;
+  }
+  
+  nav.menu {
+	height: 100%;
+	border-bottom: 1px solid gray;
+  }
+  
+  .inner {
+	width: 1160px;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+  }
+  
+  nav.menu > .inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+  }
+  
+  /* link_left */
+  
+  nav.menu .link_left {
+	display: flex;
+	position: absolute;
+	top: 10px;
+	left: 0;
+  }
+  
+  nav.menu .link_left a {
+	font-size: 13px;
+	margin-right: 20px;
+  }
+  
+  nav.menu .link_left a:hover {
+	color: #6a6a6a;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+	text-decoration-thickness: 0.5px;
+  }
+  
+  /* link_right */
+  
+  nav.menu .link_right {
+	display: flex;
+	position: absolute;
+	top: 10px;
+	right: 0;
+	z-index: 777;
+  }
+  
+  nav.menu .link_right a {
+	font-size: 13px;
+	margin-left: 20px;
+  }
+  
+  nav.menu .link_right a:hover {
+	color: #6a6a6a;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+	text-decoration-thickness: 0.5px;
+  }
+  
+  /* gnb_left */
+  
+  nav.menu .gnb_left ul {
+	display: flex;
+  }
+  
+  nav.menu .gnb_left ul li {
+	width: 50px;
+	height: 40px;
+	margin: 0 50px 0 0;
+  }
+  
+  nav.menu .gnb_left ul li a {
+	font-size: 19px;
+	display: block;
+	text-align: center;
+	font-weight: 600;
+  }
+  nav.menu .gnb_left ul li.icon {
+	width: 100px;
+	justify-content: start;
+	display: flex;
+	padding: 0;
+  }
+  
+  nav.menu .gnb_left ul li:nth-child(1) a {
+	padding: 2px 18px 0 0;
+  }
+  
+  /* logo */
+  
+  nav.menu .logo {
+	width: 140px;
+	margin-bottom: 10px;
+  }
+  
+  nav.menu .logo a img {
+	width: 100%;
+  }
+  
+  /* gnb_right */
+  
+  nav.menu .gnb_right ul {
+	display: flex;
+  }
+  
+  nav.menu .gnb_right ul li {
+	width: 50px;
+	height: 40px;
+	margin: 0 0 0 50px;
+  }
+  
+  nav.menu .gnb_right ul li a {
+	font-size: 19px;
+	display: block;
+	text-align: center;
+	font-weight: 600;
+  }
+  
+  nav.menu .gnb_right ul li.icon {
+	width: 100px;
+	justify-content: end;
+	display: flex;
+	padding: 0;
+  }
+  
+  nav.menu .gnb_right ul li:nth-child(4) a {
+	padding: 2px 0 0 18px;
+  }
+  
+  /* menu hover */
+  
+  .gnb_line:hover {
+	opacity: 1;
+	border-bottom: 4px solid #503396;
+  }
+  
 
 /* 박스오피스 content */
 
@@ -57,7 +205,7 @@ button {
 
 #main_page .content .title {
 	position: relative;
-	margin: 100px 0 30px;
+	margin: 30px 0 30px;
 }
 
 #main_page .content .title h2 {
@@ -68,6 +216,7 @@ button {
 #main_page .content .title h2 span {
 	padding-bottom: 5px;
 	border-bottom: 2px solid gray;
+	color: #fff;
 }
 
 #main_page .content .title .more {
