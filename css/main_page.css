@@ -17,7 +17,7 @@ button {
 	color: #000;
 }
 
-/* content */
+/* 박스오피스 content */
 
 #main_page .content {
 	width: 100%;
@@ -83,9 +83,67 @@ button {
 	margin-bottom: 50px;
 }
 
-#main_page .content .movie li .img-box {
+#main_page .content .movie li {
 	width: 245px;
+	position: relative;
+}
+
+#main_page .content .movie span {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	font-style: italic;
+	font-size: 28px;
+	line-height: 1;
+	z-index: 2;
+}
+
+#main_page .content .movie .dolby {
+	width: 60%;
+	display: flex;
+	position: absolute;
+	justify-content: flex-end;
+	top: 8px;
+	right: 8px;
+	z-index: 2;
+}
+
+#main_page .content .movie .dolby div {
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	padding: 8px;
+	margin-right: 5px;
+}
+
+#main_page .content .movie li .img-box {
+	width: 100%;
 	height: 352px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	position: relative;
+}
+
+#main_page .content .movie li .img-box .text-box {
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	z-index: 10;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+#main_page .content .movie li .img-box .text-box p {
+	padding: 15px;
+}
+
+#main_page .content .movie li .img-box:hover .text-box {
+	opacity: 1;
 }
 
 #main_page .content .movie li .img-box img {
@@ -93,11 +151,47 @@ button {
 	height: 100%;
 }
 
+#main_page .content .movie li .btn-box {
+	width: 100%;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+#main_page .content .movie li .btn-box a {
+	display: block;
+}
+
+#main_page .content .movie li .btn-box a:first-child {
+	width: 30%;
+}
+
+#main_page .content .movie li .btn-box a:last-child {
+	width: 68%;
+}
+
+#main_page .content .movie li .btn-box a button {
+	width: 100%;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	border: 1px solid gray;
+	border-radius: 3px;
+	line-height: 2;
+	cursor: pointer;
+}
+
+#main_page .content .movie li .btn-box a:last-child button {
+	border: 1px solid #027B94;
+	background-color: #027B94;
+}
+
 #main_page .content ul.search {
 	display: flex;
 	background: rgba(0, 0, 0, 0.2);
 	padding: 25px;
 	margin-bottom: 30px;
+	align-items: center;
 }
 
 #main_page .content ul.search li {
@@ -105,10 +199,19 @@ button {
 	text-align: center;
 	line-height: 1.8;
 	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+
+#main_page .content ul.search li img {
+	margin-right: 10px;
+}
+
 
 #main_page .content ul.search li:nth-child(n+2) {
 	border-left: 1.5px solid #423e3e;
+	cursor: pointer;
 }
 
 #main_page .content ul.search li:nth-child(1) span {
@@ -117,9 +220,9 @@ button {
 }
 
 #main_page .content ul.search li:nth-child(1) button {
-
 	color: gray;
 	font-size: 18px;
+	cursor: pointer;
 }
 
 #main_page .content ul.search li:nth-child(1) input {
