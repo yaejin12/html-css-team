@@ -13,8 +13,8 @@
 
 /* contents-inner-wrap */
 
-.container .contents-inner-wrap {
-  width: 90%;
+.container .inner-wrap {
+  width: 1160px;
   position: relative;
   margin: 0 auto;
 }
@@ -29,7 +29,7 @@
   margin: 0 auto;
 }
 .container .page-util .location {
-  width: 80%;
+  width: 100%;
   font-size: 18px;
   font-weight: 400;
   line-height: 50px;
@@ -59,7 +59,7 @@
 
 #contents .inner-wrap .title {
 
-  width: 80%;
+  width: 100%;
   margin: 30px auto;
   letter-spacing: 1px;
 }
@@ -73,7 +73,7 @@ font-weight: 500;
 
 #contents .inner-wrap .tap-list {
   font-size: 16px;
-  width: 80%;
+  width: 100%;
   padding: 15px 0;
   margin: 5px auto;
 }
@@ -107,7 +107,7 @@ font-weight: 500;
 /* #contents > .inner-wrap .movie-list-util */
 
 #contents > .inner-wrap .movie-list-util {
-  width: 80%;
+  width: 100%;
   margin: 25px auto 0;
 }
 #contents > .inner-wrap .movie-list-util .topSort{
@@ -185,11 +185,12 @@ font-weight: 500;
 #contents .movie-list ul li {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  justify-content: space-between;
+  width: 100%;
   margin: 0 auto;
 }
 #contents .movie-list ul li .movie-specify {  
-  width: 22%;
+  width: 240px;
   margin-left: 4% ;
   margin-top: 2%;
   position: relative;
