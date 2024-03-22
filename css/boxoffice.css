@@ -16,7 +16,7 @@ nav.menu {
 }
 nav.menu > .inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: end;
 }
 
@@ -43,7 +43,7 @@ nav.menu .link_right {
   display: flex;
   position: absolute;
   top: 10px;
-  right: 160px;
+  right: 155px;
   z-index: 777;
 }
 nav.menu .link_right a {
@@ -60,21 +60,19 @@ nav.menu .link_right a:hover {
 /* gnb_left */
 nav.menu .gnb_left ul {
   display: flex;
-  margin-left: 160px;
-  width: 350px;
-  /* background: red; */
+  justify-content: space-between;
+  margin-left: 120px;
 }
 nav.menu .gnb_left ul li {
   width: 50px;
   height: 40px;
-  margin: 0 40px 0 0;
+  margin: 0 50px 0 0;
 }
 nav.menu .gnb_left ul li a {
   font-size: 18px;
   display: block;
   text-align: center;
   font-weight: 600;
-  /* background: red; */
 }
 nav.menu .gnb_left ul li.icon {
   width: 100px;
@@ -101,16 +99,14 @@ nav.menu .logo a img {
 
 /* gnb_right */
 nav.menu .gnb_right ul {
-  /* background: red; */
   display: flex;
   justify-content: space-between;
-  margin-right: 160px;
-  width: 350px
+  margin-right: 120px;
 }
 nav.menu .gnb_right ul li {
   width: 50px;
   height: 40px;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 50px;
   text-align-last: left;
 }
 nav.menu .gnb_right ul li a {
@@ -144,10 +140,11 @@ nav.menu .gnb_right ul li:nth-child(4) a {
   height: 42px;
   background: #f8f8fa;
   margin: 0 auto;
+  /* background: red; */
 }
 .container .page-util .inner-wrap{
   width: 80%;
-  margin: 8px auto;
+  margin: 0 auto;
 }
 
 .container .page-util .inner-wrap .location{
