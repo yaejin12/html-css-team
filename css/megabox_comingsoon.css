@@ -259,12 +259,13 @@ main .content .movie-main-list ul li .movie_info .movie_info_day {
 }
 main .content .movie-main-list ul li .movie_info .movie_info_day p {
   display: inline-block;
+  font-size: 14px;
 }
 main .content .movie-main-list ul li .movie_info .movie_info_day .line {
   width: 1px;
   height: 13px;
   background: #8e8e8e;
-  margin: 0 5px 0;
+  margin: 0 3px 0;
 }
 
 /* 영화 리스트 하단 버튼 */
